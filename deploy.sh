@@ -17,16 +17,16 @@ git commit -m "Add files from dist directory"
 git checkout main
 
 #从临时分支合并变更到 main 分支。
-git merge temp_branch
+git merge --no-edit temp_branch
 
 
 git push origin main
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
 
-git push origin --D temp_branch
+git push origin --delete temp_branch
 
-git branch -D temp_branch
+git branch --delete temp_branch
 
 # git init
 # git add -A
