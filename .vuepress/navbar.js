@@ -5,7 +5,7 @@ export default defineNavbarConfig([
   {
     text: '博客',
     link: '/blog/',
-    activeMatch: '^/(jm-garming\/blog|jm-garming\/article)/',
+    activeMatch: '^/(blog|article)/',
     icon: 'material-symbols:menu-book',
   },
   // { text: 'Projects', link: '/projects/', icon: 'ri:open-source-fill' },
