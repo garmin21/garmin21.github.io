@@ -25,24 +25,24 @@ export default defineUserConfig({
   temp: resolve('.vuepress/.temp'),
   cache: resolve('.vuepress/.cache'),
   head: [
-    // [
-    //   'link',
-    //   {
-    //     rel: 'icon',
-    //     type: 'image/png',
-    //     sizes: '32x32',
-    //     href: '/favicon-32x32.png',
-    //   },
-    // ],
     [
       'link',
       {
         rel: 'icon',
         type: 'image/png',
-        sizes: '16x16',
-        href: '/favicon.ico',
+        sizes: '32x32',
+        href: '/jm.jpg',
       },
     ],
+    // [
+    //   'link',
+    //   {
+    //     rel: 'icon',
+    //     type: 'image/png',
+    //     sizes: '16x16',
+    //     href: '/favicon.ico',
+    //   },
+    // ],
     // [
     //   'link',
     //   {
