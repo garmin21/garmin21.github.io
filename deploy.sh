@@ -10,7 +10,7 @@ pnpm build
 
 # 创建一个新的临时分支，将 dist 目录中的文件提交到该分支上。
 git checkout -b temp_branch
-git add dist
+git add dist/*
 git commit -m "Add files from dist directory"
 
 
