@@ -1,0 +1,21 @@
+{
+  "name": "jm-garming",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "build": "vuepress build docs & cd docs/.vuepress/dist",
+    "deploy": "bash deploy.sh",
+    "push": "bash push.sh"
+  },
+  "dependencies": {
+    "vuepress": "^1.9.7",
+    "vuepress-plugin-demo-container": "^0.2.0",
+    "vuepress-theme-reco": "^1.6.11"
+  },
+  "devDependencies": {
+    "vuepress-plugin-nuggets-style-copy": "^1.0.3"
+  }
+}

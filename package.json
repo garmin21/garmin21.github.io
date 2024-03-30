@@ -1,0 +1,24 @@
+{
+  "name": "jm-garming",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev src --config ./config.js",
+    "build": "vuepress build src --config ./config.js",
+    "deploy": "bash deploy.sh",
+    "push": "bash push.sh"
+  },
+  "author": "jm-garming",
+  "license": "ISC",
+  "devDependencies": {
+    "@vuepress/bundler-vite": "^2.0.0-rc.9",
+    "typescript": "^5.4.3",
+    "vue": "^3.4.21",
+    "vuepress": "^2.0.0-rc.9"
+  },
+  "dependencies": {
+    "@vuepress/theme-default": "^1.9.10",
+    "vuepress-theme-plume": "^1.0.0-rc.47"
+  }
+}
