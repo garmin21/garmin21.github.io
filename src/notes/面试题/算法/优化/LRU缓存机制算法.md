@@ -1,13 +1,25 @@
 ---
 title: LRU缓存机制算法
-date: '2023-03-20'
-categories:
-  - 算法
-tags:
-  - 算法
-publish: true
+createTime: 2024/04/01 06:39:29
+author: jm-garming
+permalink: /interview-question/5z48vy51/
 ---
 
+::: tip 提问
+
+1. LRU缓存机制算法
+2. 实现
+
+:::
+
+
+## LRU缓存机制算法
+
+LRU缓存机制，是一种 对资源管理的机制，通过设置，最大管理size数量，如果超出就删除一定等量的栈底数据，也就是不常用的数据，对于频繁读取的数据，会放置在 栈顶， 通过这种方式可以合理的安排，资源的获取。
+
+
+
+## 实现
 ```js
 // 第一步代码
 class LRUCache {

@@ -115,16 +115,16 @@ export default defineNavbarConfig([
         icon: 'grommet-icons:cli',
         activeMatch: '^/cli',
       },
-      // {
-      //   text: 'You-Need-Know-Vite',
-      //   link: 'https://you-need-know-vite.netlify.app/',
-      //   icon: 'vscode-icons:file-type-vite',
-      // },
-      // {
-      //   text: '中国古典文学',
-      //   link: 'https://poetry.jm-garming',
-      //   icon: 'icon-park-outline:chinese',
-      // },
+      {
+        text: 'You-Need-Know-Vite',
+        link: 'https://you-need-know-vite.netlify.app/',
+        icon: 'vscode-icons:file-type-vite',
+      },
+      {
+        text: '中国古典文学',
+        link: 'https://poetry.jm-garming',
+        icon: 'icon-park-outline:chinese',
+      },
     ],
   },
 ])
