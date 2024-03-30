@@ -13,8 +13,8 @@ console.log(isDev())
 export default defineUserConfig({
   bundler: viteBundler(),
   theme,
-  base: '/jm-garming/',
-  // base: '/',
+  // base: '/jm-garming/',
+  base: '/',
   // plugins: [googleAnalyticsPlugin({ id: 'G-TMXNCJR2K7' })],
   lang: 'zh-CN',
   locales: {
