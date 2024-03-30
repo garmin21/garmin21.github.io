@@ -142,6 +142,16 @@ export default definePlumeNotesItemConfig({
           dir: '排序',
           items: ['冒泡排序', '选择排序', '插入排序', '希尔排序', '归并排序', '快速排序', '排序算法总结'],
         },
+        {
+          text: '查找算法',
+          dir: '查找',
+          items: ['二分查找法'],
+        },
+        {
+          text: '优化算法',
+          dir: '优化',
+          items: ['LRU缓存机制算法'],
+        },
       ],
     },
     {
