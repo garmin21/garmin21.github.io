@@ -24,8 +24,9 @@ git push origin main
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
 
-git push origin --delete temp_branch
-git branch -delete temp_branch
+git push origin --D temp_branch
+
+git branch -D temp_branch
 
 # git init
 # git add -A
