@@ -1,11 +1,10 @@
 ---
-title: vue2 vue.config.js 配置说明
-date: '2022-12-04'
-categories:
-  - 框架
+title: vue.config.js 配置说明
 tags:
-  - vue2
-publish: true
+  - vue
+createTime: 2024/03/31 20:46:37
+permalink: /article/iezsvhvr/
+author: jm-garming
 ---
 
 ### 基本配置

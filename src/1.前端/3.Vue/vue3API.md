@@ -1,11 +1,10 @@
 ---
 title: vue3 API
-date: '2022-12-11'
-categories:
-  - 框架
 tags:
-  - vue3
-publish: true
+  - vue
+createTime: 2024/03/31 20:46:37
+permalink: /article/iezsshvr/
+author: jm-garming
 ---
 
 ## 常规

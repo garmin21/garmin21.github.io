@@ -1,11 +1,10 @@
 ---
-title: vue2 directive
-date: '2022-08-08'
-categories:
-  - 框架
+title: vue directive
 tags:
-  - vue2
-publish: true
+  - vue
+createTime: 2024/03/31 20:46:37
+permalink: /article/iezlvhvr/
+author: jm-garming
 ---
 
 ### 1. vue2 指令介绍

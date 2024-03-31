@@ -1,12 +1,12 @@
 ---
-title: 3-2 vite搭建 formilyjs 提供 可视化表单设计器
-date: '2023-03-02'
-categories:
-    - 框架
+title: vite搭建 formilyjs 提供 可视化表单设计器
 tags:
-    - formilyjs
-publish: true
+  - formilyjs
+createTime: 2024/03/31 20:46:37
+permalink: /article/imjpofnr/
+author: jm-garming
 ---
+
 
 ## 简介
 

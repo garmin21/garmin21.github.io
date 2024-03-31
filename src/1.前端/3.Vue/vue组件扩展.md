@@ -1,11 +1,10 @@
 ---
 title: vue 组件扩展
-date: '2024-04-01'
-categories:
-  - 框架
 tags:
-  - vue2
-publish: true
+  - vue
+createTime: 2024/03/31 20:46:37
+permalink: /article/imxashvr/
+author: jm-garming
 ---
 
 任何只要使用 vue 开发的组件，比如 element-ui 等

@@ -1,11 +1,10 @@
 ---
 title: vue3 减少大型不可变数据的响应性开销
-date: '2023-03-18'
-categories:
-  - 框架
 tags:
-  - vue3
-publish: true
+  - vue
+createTime: 2024/03/31 20:46:37
+permalink: /article/iezashvr/
+author: jm-garming
 ---
 
 ## 简介
