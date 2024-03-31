@@ -37,7 +37,7 @@ git commit -m 'deploy'
 
 # git pull
 
-git remote set-url origin git@github.com:garmin21/garmin21.github.io.git
+git remote add origin git@github.com:garmin21/garmin21.github.io.git
 
 # 如果发布到 https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
