@@ -1,10 +1,8 @@
 ---
 title: React Ref
-tags:
-  - react
 createTime: 2024/03/31 20:46:37
-permalink: /article/imjpobvr/
-author: jm-garming
+permalink: /learn-react/refs/
+author: 李嘉明
 ---
 
 ## 1. 简介

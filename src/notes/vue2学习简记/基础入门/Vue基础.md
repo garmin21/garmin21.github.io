@@ -1,10 +1,8 @@
 ---
 title: Vue 基础
-tags:
-  - vue
+author: 李嘉明
 createTime: 2024/03/31 20:46:37
-permalink: /article/iexashvr/
-author: jm-garming
+permalink: /learn-vue/base/
 ---
 
 > 以官方文档为主，学习笔记为辅，来记录，vue 官网: https://cn.vuejs.org/

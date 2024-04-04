@@ -1,10 +1,8 @@
 ---
 title: React核心概念
-tags:
-  - react
 createTime: 2024/03/31 20:46:37
-permalink: /article/imxpvhvr/
-author: jm-garming
+permalink: /learn-react/core/
+author: 李嘉明
 ---
 
 ## jsx 是一个 JavaScript 的语法扩展

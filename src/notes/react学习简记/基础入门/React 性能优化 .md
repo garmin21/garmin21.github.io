@@ -1,10 +1,8 @@
 ---
 title: React 性能优化 useMemo + React.memo
-tags:
-  - react
 createTime: 2024/03/31 20:46:37
-permalink: /article/imxpmkvr/
-author: jm-garming
+permalink: /learn-react/performance/
+author: 李嘉明
 ---
 
 ## 1. useMemo 到底是做什么的，工作原理是什么。

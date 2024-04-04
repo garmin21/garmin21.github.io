@@ -1,11 +1,10 @@
 ---
 title: React中代码分割
-tags:
-  - react
 createTime: 2024/03/31 20:46:37
-permalink: /article/imxpmtvr/
-author: jm-garming
+permalink: /learn-react/code-division/
+author: 李嘉明
 ---
+
 代码分割的好处，就是在需要的时候，才去加载资源，假如页面初始化 就加载 100 个页面脚本，应用就会白屏
 
 ## `Suspense` + `Lazy`
