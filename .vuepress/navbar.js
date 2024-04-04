@@ -91,6 +91,18 @@ export default defineNavbarConfig([
         activeMatch: '^/note/learn-rust/',
         icon: 'mdi:language-rust',
       },
+      {
+        text: 'vue2学习简记',
+        link: '/learn-vue/',
+        activeMatch: '^/note/learn-vue/',
+        icon: 'mdi:language-rust',
+      },
+      {
+        text: 'react学习简记',
+        link: '/learn-react/',
+        activeMatch: '^/note/learn-react/',
+        icon: 'mdi:language-rust',
+      },
     ],
   },
   {

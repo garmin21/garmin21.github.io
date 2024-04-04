@@ -5,6 +5,8 @@ import vuepressPlugin from './vuepress-plugin.js'
 import typeChallenges from './type-challenges.js'
 import learnRust from './learn-rust.js'
 import defensiveCss from './defensive-css.js'
+import learnReact from './learn-react.js'
+import learnVue from './learn-vue.js'
 
 export default definePlumeNotesConfig({
   dir: 'notes',
@@ -16,5 +18,7 @@ export default definePlumeNotesConfig({
     typeChallenges,
     learnRust,
     defensiveCss,
+    learnReact,
+    learnVue
   ],
 })
