@@ -107,23 +107,33 @@ Vue.config.keyCodes.f1 = 122; // 通过 v-on:keyup.f1 使用
 Vue.directive('focus',{}) // 通过 v-focus 绑定到元素上即可
 1. 参数一 : 指令的名称，注意在定义的时候，指令名称的前面不需要加 `v-`前缀
 2. 是一个配置对象，在这个对象身上，有一些指令相关的钩子函数，这些函数在特定的阶段，执行相关的操作
-	bind : function(el,binding){ // 当指令绑定到元素上后，会立即执行这个 bind 函数 只执行一次
+	  bind : function(el,binding){ // 当指令绑定到元素上后，会立即执行这个 bind 函数 只执行一次
                 el.focus()};
     inserted : function(el,binding){   // 插入到 dom 中 ，会执行 inserted 函数 触发一次
                 el.focus()}
     updated : function(el,binding){ // 组件(vNode) 更新时 ，会执行updated 函数 可能会 触发多次
                 el.focus()}
 钩子函数参数
-    1、el : el 代表绑定的元素, el 就是原生的js对象
-    2、binding : 一个对象，包含以下属性 // 作用 ： 用于拿到指令传递过来的数据
-        name : 指令名
-        value : 指令绑定值，列如：v-number="1 + 1" ,value的值是 2
-        expression : 绑定值的字符串形式 ，列如： v-number="1 + 1", expression 的值为 "1+1"
+    1、el：指令所绑定的元素，可以用来直接操作 `DOM`。
+    2、 binding：一个对象，包含以下 `property`：
+        name：指令名，不包括 `v- 前缀`。
+        value：指令的绑定值，例如：`v-my-directive="1 + 1"` 中，绑定值为 2。
+        oldValue：指令绑定的前一个值，仅在 `update 和 componentUpdated` 钩子中可用。无论值是否改变都可用。
+        expression：字符串形式的指令表达式。例如 v-my-directive="1 + 1" 中，表达式为 "1 + 1"。
+        arg：传给指令的参数，可选。例如 `v-my-directive:foo` 中，参数为 `foo`。
+        modifiers：一个包含修饰符的对象。例如：`v-my-directive.foo.bar` 中，修饰符对象为 `{ foo: true, bar: true }`。
+        vnode：Vue 编译生成的虚拟节点。`移步 VNode API 来了解更多详情`。
+        oldVnode：上一个虚拟节点，`仅在 update 和 componentUpdated 钩子中可用`。
 
 详解：
-1. bind 表示指令绑定到元素上后触发，但是并没有插入到DOM树中，所以调用 `focus()` 没有作用
-2. inserted 表示 元素已经插入到了DOM树，所以调用 `focus()` 有作用
-3. updated 表示。。。
+  1. bind 表示指令绑定到元素上后触发，但是并没有插入到DOM树中，所以调用 `focus()` 没有作用
+  2. inserted 表示 元素已经插入到了DOM树，所以调用 `focus()` 有作用
+  3. updated 表示。。。
+
+指令的几种用法形式:
+  1. `v-copy="message"`, message 可以在 binding.value 中获取 指令的绑定值
+  2. `v-copy:name="message"`, name 可以在 binding.arg 中获取 传给指令的参数
+  3. `v-copy.stop="message"`, name 可以在 binding.modifiers 中获取 一个包含修饰符的对象
 ```
 
 ```json

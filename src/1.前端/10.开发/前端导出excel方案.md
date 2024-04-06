@@ -366,11 +366,17 @@ const tableToExcel = () => {
 }
 ```
 
-## 区别与方案
+## exceljs 插件
+exceljs 是一款可导出，可读取的 Excel 操作工具，可以实现样式的修改以及 Excel 的高级功能，是非常值得推荐的一个处理 Excel 的库。
 
-| 插件 | 优点 | 缺点 |
+
+[Excel基础](https://segmentfault.com/a/1190000042028092)
+
+## 技术方案
+
+| 插件 | 介绍 | 推荐指数 |
 |:------|:-------:|------:|
-| 原生JS导出csv | 成本低，也是最方便的 | 仅支持csv格式**（功能最弱）** |
-| url 下载 | 后端实现，前端只是下载 |  前端切图仔😁|
-| Blob 文件流 | 一样 |  一样 |
-| XLSX | 支持对数据处理并导出Excel文件。 | 学习成本 |
+| 原生JS导出csv | 成本低，也是最方便的，仅支持csv格式**（功能最弱）** | :star: |
+| url 下载 / Blob 文件流 | 后端实现，前端只是下载,  | :star::star::star::star::star: |
+| XLSX | xlsx 是前端最热门的 Excel 导出方案，又叫做 SheetJS，默认不支持修改 Excel 的样式。若在工作业务需求上需要修改 Excel 的样式的话需要使用该作者的付费版本。或者使用 xlsx-style，但使用起来非常麻烦，需要修改 node_modules 源码，而且作者最近的提交的版本也在 6 年前，不建议使用。 | :star: |
+| exceljs | exceljs 是一款可导出，可读取的 Excel 操作工具，可以实现样式的修改以及 Excel 的高级功能，是非常值得推荐的一个处理 Excel 的库，而 exceljs 也是本文介绍的主角！ | :star::star::star::star::star: |
