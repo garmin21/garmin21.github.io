@@ -1,5 +1,5 @@
 node_modules
-.vuepress
+# .vuepress
 # # VuePress 默认临时文件目录
 .vuepress/.temp
 # # VuePress 默认缓存目录
