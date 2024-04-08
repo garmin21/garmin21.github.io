@@ -15,7 +15,7 @@ export default definePlumeNotesItemConfig({
       collapsed: false,
       items: [
         'vue核心概念',
-        // '类型推导',
+        'vueRouter',
         // '基本类型',
         // '数字类型',
         // '字符,布尔,单元类型',
