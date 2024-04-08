@@ -165,3 +165,8 @@ const diffArrays = Diff.diffArrays(arr1, arr2)
 
 console.table(diffArrays)
 ```
+
+
+[diff.js使用指南](https://juejin.cn/post/6855129008007774216#heading-6)
+
+[diff-npm](https://www.npmjs.com/package/diff#change-objects)
