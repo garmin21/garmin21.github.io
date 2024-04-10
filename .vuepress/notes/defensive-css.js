@@ -2,11 +2,33 @@ import { definePlumeNotesItemConfig } from 'vuepress-theme-plume'
 
 export default definePlumeNotesItemConfig({
   link: '/defensive-css/',
-  dir: '防御性CSS',
+  dir: '重生之我在深圳重学CSS',
   sidebar: [
     '',
+    // {
+    //   text: '基础篇',
+    //   collapsed: false,
+    //   items: [
+    //     ''
+    //   ],
+    // },
+    // {
+    //   text: '进阶篇',
+    //   collapsed: false,
+    //   items: [
+    //     ''
+    //   ],
+    // },
+    // {
+    //   text: '大神篇',
+    //   collapsed: false,
+    //   items: [
+    //     ''
+    //   ],
+    // },
     {
-      text: '技巧',
+      dir: '技巧篇',
+      collapsed: false,
       items: [
         'flex-box-wrapping',
         'image-distortion',
