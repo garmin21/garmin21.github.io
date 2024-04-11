@@ -32,11 +32,11 @@ case $os in
     #     echo "Linux"
     #     ;;
     Darwin*)
-        # echo "macOS"
-        git push https://github.com/garmin21/garmin21.github.io.git garmin21:main -f
+        echo "macOS"
+        git push https://github.com/garmin21/garmin21.github.io.git garming21:main -f
         ;;
     CYGWIN*|MINGW32*|MSYS*|MINGW*)
-        # echo "Windows"
+        echo "Windows"
         git push https://github.com/garmin21/garmin21.github.io.git master:main -f
         ;;
     *)
