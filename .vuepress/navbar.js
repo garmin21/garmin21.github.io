@@ -68,7 +68,7 @@ export default defineNavbarConfig([
     icon: 'icon-park-solid:bookshelf',
     items: [
       {
-        text: '防御性CSS',
+        text: '重生之我在深圳重学CSS',
         link: '/defensive-css/',
         activeMatch: '^/note/defensive-css/',
         icon: 'streamline:css-three',
