@@ -1,11 +1,8 @@
 ---
 title: Gulp 入门
-date: '2023-04-12'
-categories:
-    - 构建工具
-tags:
-    - gulp
-publish: true
+author: 李嘉明
+createTime: 2024/04/12 03:40:46
+permalink: /learn-build/gulp-start/
 ---
 
 ## 1、Gulp 介绍
@@ -68,16 +65,16 @@ Gulp 本身并不支持特定格式的文件，它只关心流 (Stream) 的处�
 
 ### 项目目录
 
-    ```
-    |- dist
-    |- build
-    |- src
-      |- js
-      |- less
-    |- index.html
-    |- gulpfile.ts ----- gulp配置文件
-    |- package.json
-    ```
+```txt
+|- dist
+|- build
+|- src
+  |- js
+  |- less
+|- index.html
+|- gulpfile.ts ----- gulp配置文件
+|- package.json
+```
 
 ### 安装 gulp
 
@@ -124,4 +121,4 @@ series(
 
 ## 参考
 
--   [中文主页](http://www.gulpjs.com.cn/)
+[中文主页](http://www.gulpjs.com.cn/)

@@ -103,6 +103,12 @@ export default defineNavbarConfig([
         activeMatch: '^/note/learn-react/',
         icon: 'skill-icons:react-dark',
       },
+      {
+        text: '构建工具',
+        link: '/learn-build/',
+        activeMatch: '^/note/learn-build/',
+        icon: 'noto-v1:building-construction',
+      }, //skill-icons:gulp
     ],
   },
   {
@@ -133,9 +139,9 @@ export default defineNavbarConfig([
         icon: 'vscode-icons:file-type-vite',
       },
       {
-        text: '中国古典文学',
-        link: 'https://poetry.jm-garming',
-        icon: 'icon-park-outline:chinese',
+        text: 'iconify',
+        link: 'https://iconify.design/',
+        icon: 'simple-icons:iconify',
       },
     ],
   },
