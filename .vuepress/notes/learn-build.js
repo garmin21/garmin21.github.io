@@ -9,6 +9,7 @@ export default definePlumeNotesItemConfig({
       collapsed: false,
       items: [
         'Gulp入门',
+        '背景'
       ],
     },
     {
