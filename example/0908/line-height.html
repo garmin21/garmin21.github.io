@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .outer {
+        /* line-height: 300px; */
+        background-color: #abcdef;
+        height: 300px;
+      }
+      /* .outer span {
+        line-height: normal;
+        display: inline-block;
+        vertical-align: middle;
+        border: 1px red solid;
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- 
+
+    1. 了解概念，四线格 x 字母在  基线 和 中线之间
+    2. line-hight 控制行高，规范来说就是两行文字基线之间的距离
+    3. 两行文字之间的距离实际上就是，底线之间的距离， 当 line-height 为 0 的时候，文字会重叠在一起
+    4. line-height 控制 内联元素，行高直接决定了内联元素的高度
+    5. 内联元素 的 line-height 是由父容器决定的
+   -->
+
+    <div class="outer">
+      内联元素 的 line-height 是由父容器决定的内联元素 的 line-height 内联元素
+      的 line-height 是由父容器决定的内联元素 的 line-height 内联元素 的
+      line-height 是由父容器决定的内联元素 的 line-height 内联元素 的
+      line-height 是由父容器决定的内联元素 的 line-height 内联元素 的
+      line-height 是由父容器决定的内联元素 的 line-height 内联元素 的
+      line-height 是由父容器决定的内联元素 的 line-height 内联元素 的
+      line-height 是由父容器决定的内联元素 的 line-height 内联元素 的
+      line-height 是由父容器决定的内联元素 的 line-height
+    </div>
+  </body>
+</html>
