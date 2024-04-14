@@ -560,5 +560,5 @@ export default PopupManager
 ## 分析图
 
 ::: demo-wrapper img no-padding
-![hero](/images/frame/viewport.png)
+![viewport](/images/frame/viewport.png)
 :::
