@@ -9,7 +9,10 @@ export default definePlumeNotesItemConfig({
       dir: '基础篇',
       collapsed: false,
       items: [
-        'line-height'
+        'line-height',
+        'vertical-align',
+        '背景',
+        '盒模型'
       ],
     },
     // {
