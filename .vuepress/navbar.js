@@ -34,31 +34,31 @@ export default defineNavbarConfig([
         text: 'Vuepress',
         icon: 'vscode-icons:file-type-vue',
         items: [
-          {
-            text: 'vuepress-theme-plume',
-            link: 'https://plume.jm-garming',
-            icon: 'mdi:paper-airplane',
-          },
-          {
-            text: 'plugin-caniuse',
-            link: 'https://plume.jm-garming/plugins/plugin-caniuse/',
-            icon: 'pajamas:feature-flag',
-          },
-          {
-            text: 'plugin-shikiji',
-            link: 'https://plume.jm-garming/plugins/plugin-shikiji/',
-            icon: 'material-symbols-light:code-blocks-outline-rounded',
-          },
-          {
-            text: 'plugin-iconify',
-            link: 'https://plume.jm-garming/plugins/plugin-iconify/',
-            icon: 'line-md:iconify1',
-          },
-          {
-            text: 'plugin-netlify-functions',
-            link: 'https://plume.jm-garming/plugins/plugin-netlify-functions/',
-            icon: 'teenyicons:netlify-solid',
-          },
+          // {
+          //   text: 'vuepress-theme-plume',
+          //   link: 'https://plume.jm-garming',
+          //   icon: 'mdi:paper-airplane',
+          // },
+          // {
+          //   text: 'plugin-caniuse',
+          //   link: 'https://plume.jm-garming/plugins/plugin-caniuse/',
+          //   icon: 'pajamas:feature-flag',
+          // },
+          // {
+          //   text: 'plugin-shikiji',
+          //   link: 'https://plume.jm-garming/plugins/plugin-shikiji/',
+          //   icon: 'material-symbols-light:code-blocks-outline-rounded',
+          // },
+          // {
+          //   text: 'plugin-iconify',
+          //   link: 'https://plume.jm-garming/plugins/plugin-iconify/',
+          //   icon: 'line-md:iconify1',
+          // },
+          // {
+          //   text: 'plugin-netlify-functions',
+          //   link: 'https://plume.jm-garming/plugins/plugin-netlify-functions/',
+          //   icon: 'teenyicons:netlify-solid',
+          // },
         ],
       },
     ],
