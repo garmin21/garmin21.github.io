@@ -3,19 +3,22 @@
   <head>
     <style>
       .background-max {
-        padding: 20px;
-        color: #333;
-        text-align: center;
-        background: url('../../public/18.png'), url('../../public/image-2.png');
-        background-repeat: no-repeat;
+        width: 300px;
         height: 300px;
+        border: 1px solid #333;
+      }
+      .background-max:hover {
+        background: blue;
+      }
+
+      @media (hover: hover) {
+        .background-max:hover {
+          background: none;
+        }
       }
     </style>
   </head>
   <body>
-    <div class="background-max">
-      <h1>Welcome to My Website</h1>
-      <p>This is a background-attachment demo.</p>
-    </div>
+    <div class="background-max"></div>
   </body>
 </html>
