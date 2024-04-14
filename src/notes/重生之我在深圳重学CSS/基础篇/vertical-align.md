@@ -9,7 +9,6 @@ permalink: /defensive-css/vertical-align/
 ## vertical-align
 
 :::tip
-上一节，l
 
 line-height 是设置 文字 的行高，也有 基线的概念
 
