@@ -5,13 +5,13 @@ export default definePlumeNotesItemConfig({
   dir: '重生之我在深圳重学CSS',
   sidebar: [
     '',
-    // {
-    //   text: '基础篇',
-    //   collapsed: false,
-    //   items: [
-    //     ''
-    //   ],
-    // },
+    {
+      dir: '基础篇',
+      collapsed: false,
+      items: [
+        'line-height'
+      ],
+    },
     // {
     //   text: '进阶篇',
     //   collapsed: false,
