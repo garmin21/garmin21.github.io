@@ -13,12 +13,11 @@ console.log(isDev())
 export default defineUserConfig({
   bundler: viteBundler(),
   theme,
-  // base: '/jm-garming/',
   base: '/',
   // plugins: [googleAnalyticsPlugin({ id: 'G-TMXNCJR2K7' })],
   lang: 'zh-CN',
   locales: {
-    '/': { lang: 'zh-CN', title: '李嘉明', description: '热爱生活' },
+    '/': { lang: 'zh-CN', title: 'Garming', description: '热爱生活' },
   },
   dest: 'dist',
   public: resolve('public'),
@@ -29,7 +28,7 @@ export default defineUserConfig({
       'link',
       {
         rel: 'icon',
-        type: 'image/png',
+        type: 'image/jpg',
         sizes: '32x32',
         href: '/jm.jpg',
       },

@@ -1,0 +1,143 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #tooltip {
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        /* padding: 5px 10px; */
+        width: 200px;
+        height: 200px;
+        border-radius: 4px;
+        font-size: 13px;
+        display: none;
+      }
+      #tooltip[data-show] {
+        display: block;
+      }
+      #arrow,
+      #arrow::before {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background: inherit;
+      }
+
+      #arrow {
+        visibility: hidden;
+      }
+
+      #arrow::before {
+        visibility: visible;
+        content: '';
+        transform: rotate(45deg);
+      }
+
+      #tooltip[data-popper-placement^='top'] > #arrow {
+        bottom: -4px;
+      }
+
+      #tooltip[data-popper-placement^='bottom'] > #arrow {
+        top: -4px;
+      }
+
+      #tooltip[data-popper-placement^='left'] > #arrow {
+        right: -4px;
+      }
+
+      #tooltip[data-popper-placement^='right'] > #arrow {
+        left: -4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="height: 1000px"></div>
+    <!--  -->
+    <button id="button" aria-describedby="tooltip">I'm a button</button>
+    <div id="tooltip" role="tooltip" class="min-tooltip">
+      I'm a tooltip
+      <div id="arrow" data-popper-arrow data-popper-placement="bottom"></div>
+    </div>
+
+    <div style="height: 1000px"></div>
+
+    <!-- Development version -->
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+
+    <script>
+      const button = document.querySelector('#button')
+      const tooltip = document.querySelector('#tooltip')
+
+      // Pass the button, the tooltip, and some options, and Popper will do the
+      // magic positioning for you:
+      const popperInstance = Popper.createPopper(button, tooltip, {
+        placement: 'bottom',
+        modifiers: [
+          {
+            name: 'offset',
+            options: {
+              offset: [0, 8],
+            },
+          },
+        ],
+      })
+
+      function show() {
+        tooltip.setAttribute('data-show', '')
+
+        // Enable the event listeners
+        popperInstance.setOptions((options) => ({
+          ...options,
+          modifiers: [
+            ...options.modifiers,
+            { name: 'eventListeners', enabled: true },
+          ],
+        }))
+
+        popperInstance.update()
+      }
+
+      function hide() {
+        tooltip.removeAttribute('data-show')
+
+        // Disable the event listeners
+        popperInstance.setOptions((options) => ({
+          ...options,
+          modifiers: [
+            ...options.modifiers,
+            { name: 'eventListeners', enabled: false },
+          ],
+        }))
+      }
+
+      const showEvents = ['mouseenter', 'focus']
+      const hideEvents = ['mouseleave', 'blur']
+
+      showEvents.forEach((event) => {
+        button.addEventListener(event, show)
+      })
+
+      hideEvents.forEach((event) => {
+        button.addEventListener(event, hide)
+      })
+    </script>
+
+    <script>
+      function hasClass(el, cls) {
+        if (!el || !cls) return false
+        if (cls.indexOf(' ') !== -1)
+          throw new Error('className should not contain space.')
+        if (el.classList) {
+          return el.classList.contains(cls)
+        } else {
+          return (' ' + el.className + ' ').indexOf(' ' + cls + ' ') > -1
+        }
+      }
+
+
+      console.log(hasClass(document.getElementById('tooltip'), 'min-tooltip'))
+    </script>
+  </body>
+</html>
