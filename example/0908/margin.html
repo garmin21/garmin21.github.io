@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .outer {
+        /* width: 1000px; */
+        height: 250px;
+        border: 1px solid #000;
+        float: left;
+      }
+
+      .warpper {
+        width: 1068px;
+        overflow: hidden;
+        /* margin-right: -68px; */
+      }
+
+      .outer .inner {
+        width: 199px;
+        height: 200px;
+        background-color: pink;
+        float: left;
+        margin-right: 68px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="warpper">
+        <div class="inner"></div>
+        <div class="inner"></div>
+        <div class="inner"></div>
+        <div class="inner"></div>
+      </div>
+    </div>
+
+  </body>
+</html>

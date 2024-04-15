@@ -12,7 +12,8 @@ export default definePlumeNotesItemConfig({
         'line-height',
         'vertical-align',
         '背景',
-        '盒模型'
+        '盒模型',
+        'margin'
       ],
     },
     // {
