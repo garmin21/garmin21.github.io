@@ -78,34 +78,32 @@ margin 是一个用于撑开 父级或者兄弟元素 距离 的属性；
 ```
 
 <style>
-  .outer {
-    width: 400px;
-    height: 200px;
-    margin: 0 auto;
-    background-color: pink;
-    margin-bottom: 20px;
-  }
-  .inner {
-    width: 400px;
-    height: 200px;
-    margin: 0 auto;
-    background-color: hotpink;
-    margin-top: 20px;
-  }
+.outer-9527 {
+  width: 400px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: pink;
+  margin-bottom: 20px;
+}
+.inner-9527 {
+  width: 400px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: hotpink;
+  margin-top: 20px;
+}
 </style>
 
 :::demo-wrapper
 
 <div>
-  <div class="outer"></div>
+  <div class="outer-9527"></div>
 </div>
-<div class="inner"></div>
+<div class="inner-9527"></div>
 :::
 
-可以看到，按照正常的想法 因该是要撑开 40px 的，但是实际上 只有 20px。这其实也不是 bug 。这是浏览器特意设计的。如何解决呢？
+可以看到，按照正常的想法 因该是要撑开 40px 的，但是实际上 只有 20px。这其实也不是 bug 。这是浏览器特意设计的
 
-1. 使用 border， 进行隔断
-2. 开启 BFC
 
 :::normal-demo
 
