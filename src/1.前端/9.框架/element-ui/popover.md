@@ -62,6 +62,9 @@ permalink: /article/w82r5ewm/
 </template>
 ```
 
+> [!CAUTION]
+> 注意，图片采用的是 popover.js@2.x 的写法，代码里面是 element-ui@2.15.14 自己将 popover.js@1.x 复制一份到项目中使用的，固定只有几个功能
+
 我们可以看到定义了 `popper` ref `reference` slot 正是 popover.js 必须要的 `const instance = createPopper(reference, popper);`;
 
 定义了四种触发方式 hover 激活 click 激活 focus 激活 手动激活
@@ -555,6 +558,7 @@ export default PopupManager
 
 
 :::
+
 
 
 ## 分析图
