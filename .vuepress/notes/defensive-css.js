@@ -9,11 +9,14 @@ export default definePlumeNotesItemConfig({
       dir: '基础篇',
       collapsed: false,
       items: [
+        'CSS选择器',
         'line-height',
         'vertical-align',
         '背景',
         '盒模型',
-        'margin'
+        'margin',
+        'float',
+        '定位'
       ],
     },
     // {
@@ -34,6 +37,7 @@ export default definePlumeNotesItemConfig({
       dir: '技巧篇',
       collapsed: false,
       items: [
+        '扩大点击区域',
         'flex-box-wrapping',
         'image-distortion',
         'long-content',

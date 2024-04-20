@@ -19,7 +19,8 @@ export default plumeTheme({
   },
   social: [{ icon: 'github', link: 'https://github.com/garmin21' }],
   editLinkText: '在 GitHub 上编辑此页',
-  footer: { copyright: 'Copyright © 2024-present garming' },
+  // footer: { copyright: 'Copyright © 2024-present garming' },
+  footer: '',
   plugins: {
     externalLinkIcon: false,
     baiduTongji: { key: '49ebcb8d1abfcde890ef6f320a101db7' },

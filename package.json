@@ -19,6 +19,6 @@
   },
   "dependencies": {
     "@vuepress/theme-default": "^1.9.10",
-    "vuepress-theme-plume": "^1.0.0-rc.47"
+    "vuepress-theme-plume": "1.0.0-rc.52"
   }
 }
