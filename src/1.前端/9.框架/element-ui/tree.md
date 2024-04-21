@@ -4,7 +4,7 @@ author: Garming
 tags:
   - element-ui
 createTime: 2024/04/21 18:33:04
-permalink: /article/w82r5ews/
+permalink: /article/w45r5ews/
 ---
 
 :::tip
