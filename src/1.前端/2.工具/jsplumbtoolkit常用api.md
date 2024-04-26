@@ -8,22 +8,21 @@ permalink: /article/dn66xp9s/
 ## jsplumbtoolkit 常用 api
 
 ### 1. `newInstance` 初始化实例
-
+我们在页面上应该只有一个实例，所以我们只需要初始化一次 即可。后续使用 实例对象 的API 进行操作
 ```js{1}
-const jsplumbInstance = (this.jsplumbInstance = newInstance({
+this.jsplumbInstance = newInstance({
   container: document.getElementById('id'),
   paintStyle: { strokeWidth: 2, stroke: '#FF5555' },
   endpoint: 'Blank',
   anchor: 'AutoDefault',
-}))
+})
 ```
 
 ### 2. `ready` 等待 jsplumbtoolkit 加载完毕
 
 ```js
 ready(() => {
-  this.setConnect()
-  this.bindEvent()
+  // ....进行绘制等操作
 })
 ```
 
@@ -116,6 +115,24 @@ connections.forEach(function (connection) {
 })
 ```
 
+### 11. `deleteConnection` 删除连接
+
+与 `deleteEveryConnection` 相比，显然 这种方式更加可靠，删除连接再次 连接 是可以的
+```js
+const connections = this.jsplumbInstance.getConnections()
+connections.forEach((item) => this.jsplumbInstance.deleteConnection(item))
+```
+
+### 12. `revalidate` 更新容器元素信息
+:::tip
+当我们页面的布局发生很大改变，就需要更新我们的容器信息，再次去绘制，否则 插件就无法找到 实时更新到节点的位置
+:::
+
+```js
+const container = document.getElementById('dapan-monitoring-container')
+this.jsplumbInstance.revalidate(container)
+```
+ 
 ## 注意事项
 
 ### 1. 当我们使用轮询 + screenfull 全屏 显示，轮询，重新绘制 会影响线的位置
@@ -154,8 +171,15 @@ connections.forEach(function (connection) {
 ### 4. 布局发生变化，如何重新绘制
 
 ```js
-// 将状态清空
-this.plumbIns.reset()
-// 重新初始化实例，并连接
-this.initPlumbIns()
+// 1. 更新容器信息
+const container = document.getElementById('id')
+this.jsplumbInstance.revalidate(container)
+// 2. 绘制连接
+this.jsplumbInstance.connect({
+  ...item,
+  anchor: 'AutoDefault',
+  ...this.getLineWeight(item.line_thickness),
+})
+// 重新绘制
+this.jsplumbInstance.repaintEverything()
 ```
