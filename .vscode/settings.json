@@ -2,6 +2,9 @@
   "cSpell.words": [
     "jsplumb",
     "jsplumbtoolkit",
-    "screenfull"
-  ]
+    "screenfull",
+    "sortablejs",
+    "Unchoose"
+  ],
+  "liveServer.settings.port": 5501
 }

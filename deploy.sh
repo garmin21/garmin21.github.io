@@ -51,5 +51,7 @@ rm -rf dist
 
 exit 0
 
+# 淘宝镜像源 npm config set registry https://registry.npmmirror.com
+# 腾讯云镜像源 `npm config set registry http://mirrors.cloud.tencent.com/npm/`
 # 跨域速递： npm config set registry http://nexus.ky-tech.com.cn:8081/repository/npmjs-group/
 # 查看镜像源: npm config get registry
