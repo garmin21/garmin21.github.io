@@ -7,7 +7,7 @@ export default definePlumeNotesItemConfig({
     '',
     {
       dir: '基础篇',
-      collapsed: false,
+      collapsed: true,
       items: [
         'CSS选择器',
         'line-height',
@@ -35,7 +35,7 @@ export default definePlumeNotesItemConfig({
     // },
     {
       dir: '技巧篇',
-      collapsed: false,
+      collapsed: true,
       items: [
         '扩大点击区域',
         'flex-box-wrapping',

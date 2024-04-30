@@ -7,7 +7,7 @@ permalink: /article/lm4lecta/
 
 :::tip
 在我们日常，项目开中，经常会遇到 这一类的需求，需要对 某一列表的数据进行拖放排序，当然 我们也可以简单的通过 js 来实现无拖放式的排序。
-现在呢，我们来介绍一个拥有 start 数 非常高的一个 js 工具库 `Sortable.js`。
+现在呢，我们来介绍一个拥有 start 数 非常高的一个 js 拖拽排序库 `Sortable.js`。
 
 **官网介绍： 用于可重新排序的拖放列表的 JavaScript 库**
 :::
@@ -144,7 +144,7 @@ npm install sortablejs --save
 ### 禁止拖拽
 
 - 禁止拖拽 `put: false`
-- 禁止拍寻 `sort: false`
+- 禁止排序 `sort: false`
 
 ```html
 <div id="example1" class="list-group col">
