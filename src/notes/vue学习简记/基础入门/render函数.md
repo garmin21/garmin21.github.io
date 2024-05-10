@@ -53,7 +53,7 @@ render 中 我们的 h 函数 全称为 `createNodeDescription`返回的是一�
 
 1. 当我们传入是一个 String 类型时，h 会把它当成文本节点进行处理，文本节点也是 vnode 的一种
 2. 当我们传入是一个 Array 类型时，h 会把它当成多个子 vnode 进行处理，在挂载时，作为 dom 的 children 进行渲染
-   :::
+:::
 
 ## 使用
 
