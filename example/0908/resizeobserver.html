@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <textarea id="textarea"></textarea>
+
+    <script>
+      let textarea = document.getElementById("textarea");
+
+      //   初始化就会执行一次
+      const resize = new ResizeObserver((entries) => {
+        // 一但 textarea 的长宽 发生变化，这里就会持续触发
+
+        const [item] = entries;
+
+        console.log(item, "ppp");
+
+        // item.borderBoxSize // 边框盒子大小
+        // item.contentBoxSize // 内容盒子大小
+        // item.contentRect // 元素内容盒子在页面节点上的信息
+        // item.target // 元素对象
+        // item.devicePixelContentBoxSize // 元素设备像素盒子的信息
+            // blockSize: 52; 某种情况下 这个高度
+            // inlineSize: 269; 某种情况下这是宽度
+
+        item.target.style.borderRadius =
+          Math.max(0, 250 - item.contentRect.width) + "px";
+      });
+
+      resize.observe(textarea);
+    </script>
+  </body>
+</html>

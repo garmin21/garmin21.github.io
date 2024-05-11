@@ -9,7 +9,9 @@
     "Slidev",
     "sortablejs",
     "Unchoose",
+    "unobserve",
     "vnode"
   ],
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
