@@ -15,7 +15,7 @@ export default definePlumeNotesItemConfig({
       collapsed: false,
       items: [
         'vue核心概念',
-        'vueRouter',
+        '路由',
         'render函数',
         '插槽'
         // '基本类型',
