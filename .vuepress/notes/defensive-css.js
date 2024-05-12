@@ -16,23 +16,12 @@ export default definePlumeNotesItemConfig({
         '盒模型',
         'margin',
         'float',
-        '定位'
+        '定位',
+        'min-max',
+        '伪元素',
+        'css函数'
       ],
     },
-    // {
-    //   text: '进阶篇',
-    //   collapsed: false,
-    //   items: [
-    //     ''
-    //   ],
-    // },
-    // {
-    //   text: '大神篇',
-    //   collapsed: false,
-    //   items: [
-    //     ''
-    //   ],
-    // },
     {
       dir: '技巧篇',
       collapsed: true,
@@ -65,5 +54,19 @@ export default definePlumeNotesItemConfig({
         'button-minimum-width',
       ],
     },
+    {
+      dir: '进阶篇',
+      collapsed: true,
+      items: [
+        '粘性布局'
+      ],
+    },
+    // {
+    //   text: '大神篇',
+    //   collapsed: false,
+    //   items: [
+    //     ''
+    //   ],
+    // },
   ],
 })

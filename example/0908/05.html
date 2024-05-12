@@ -1,0 +1,79 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      .outer {
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .inner {
+        min-height: 100%;
+        padding-bottom: 100px;
+        box-sizing: border-box;
+      }
+   
+      footer {
+        height: 100px;
+        background: red;
+        margin-top: -100px;
+      }
+
+      /* * {
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      .outer {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .inner {
+        flex: 1;
+        box-sizing: border-box;
+        overflow-y: auto;
+      }
+
+      footer {
+        height: 100px;
+        background: red;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="inner">
+        <div class="main">
+            我是内容盒子 <br />
+            我是内容盒子 <br />
+            我是内容盒子 <br />
+            我是内容盒子 <br />
+            我是内容盒子 <br />
+            我是内容盒子 <br />
+            我是内容盒子 <br />
+            我是内容盒子 <br />
+            我是内容盒子 <br />
+            我是内容盒子 <br />
+        </div>
+      </div>
+      <footer></footer>
+    </div>
+  </body>
+</html>
