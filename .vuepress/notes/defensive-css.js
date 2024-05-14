@@ -2,7 +2,7 @@ import { definePlumeNotesItemConfig } from 'vuepress-theme-plume'
 
 export default definePlumeNotesItemConfig({
   link: '/defensive-css/',
-  dir: '重生之我在深圳重学CSS',
+  dir: 'CSS学习简记',
   sidebar: [
     '',
     {
@@ -68,5 +68,12 @@ export default definePlumeNotesItemConfig({
     //     ''
     //   ],
     // },
+    {
+      dir: 'CSS 预处理器',
+      collapsed: false,
+      items: [
+        'SCSS'
+      ],
+    },
   ],
 })
