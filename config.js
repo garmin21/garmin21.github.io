@@ -7,9 +7,8 @@ const __dirname = getDirname(import.meta.url)
 
 const resolve = (...dirs) => path.resolve(__dirname, ...dirs)
 
-const isDev = () => process.env.NODE_ENV === 'development'
+// const isDev = () => process.env.NODE_ENV === 'development'
 
-console.log(isDev())
 export default defineUserConfig({
   bundler: viteBundler(),
   theme,

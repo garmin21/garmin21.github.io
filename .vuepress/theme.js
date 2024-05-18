@@ -1,6 +1,7 @@
 import { plumeTheme } from 'vuepress-theme-plume'
 import notes from './notes/index.js'
 import navbar from './navbar.js'
+import encrypt from './encrypt.js'
 
 export default plumeTheme({
   hostname: 'http://garmin21.github.io/',
@@ -26,5 +27,6 @@ export default plumeTheme({
     baiduTongji: { key: '49ebcb8d1abfcde890ef6f320a101db7' },
     shiki: { twoslash: true },
     markdownEnhance: { demo: true },
-  }
+  },
+  encrypt
 })
