@@ -1,5 +1,5 @@
 ---
-title: FlexBox Wrapping
+title: flex-wrap
 author: 李嘉明
 createTime: 2023/08/03 19:06:31
 permalink: /defensive-css/flex-box-wrapping/

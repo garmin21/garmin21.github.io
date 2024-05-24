@@ -1,5 +1,5 @@
 ---
-title: Long Content
+title: text-overflow
 author: 李嘉明
 createTime: 2023/08/03 19:15:44
 permalink: /defensive-css/long-content/

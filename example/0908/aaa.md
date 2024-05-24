@@ -269,9 +269,10 @@ cache: {
 
 以及vscode setting 开启 styleLint 工具
 
-## 图片压缩
+## 图片压缩 `image-minimizer-webpack-plugin`
 
-安装不下来
+- [](https://runebook.dev/zh/docs/webpack/plugins/image-minimizer-webpack-plugin)
+在npm install 后 加上 --user=root 安装下来，但是配置报错 `Expected a string, got object` 暂时无法解决
 
 ## 代码规范
 

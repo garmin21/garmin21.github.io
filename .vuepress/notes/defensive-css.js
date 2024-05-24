@@ -27,6 +27,7 @@ export default definePlumeNotesItemConfig({
       collapsed: true,
       items: [
         '扩大点击区域',
+        'element-fil-container',
         'flex-box-wrapping',
         'image-distortion',
         'long-content',

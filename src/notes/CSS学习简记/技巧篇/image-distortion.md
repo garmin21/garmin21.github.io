@@ -1,5 +1,5 @@
 ---
-title: Image Distortion
+title: object-fit
 author: 李嘉明
 createTime: 2023/08/03 19:08:28
 permalink: /defensive-css/image-distortion/
