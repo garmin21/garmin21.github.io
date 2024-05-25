@@ -1,6 +1,6 @@
 ---
-title: popover
-author: Garming
+title: Popover 弹出框
+author: 李嘉明
 tags:
   - element-ui
 createTime: 2024/04/14 15:50:04
@@ -33,103 +33,11 @@ permalink: /article/w82r5ewm/
 
 ## Popover 组件
 
-```vue
-<template>
-  <span>
-    <transition
-      :name="transition"
-      @after-enter="handleAfterEnter"
-      @after-leave="handleAfterLeave"
-    >
-      <div
-        class="el-popover el-popper"
-        :class="[popperClass, content && 'el-popover--plain']"
-        ref="popper"
-        v-show="!disabled && showPopper"
-        :style="{ width: width + 'px' }"
-        role="tooltip"
-        :id="tooltipId"
-        :aria-hidden="disabled || !showPopper ? 'true' : 'false'"
-      >
-        <div class="el-popover__title" v-if="title" v-text="title"></div>
-        <slot>{{ content }}</slot>
-      </div>
-    </transition>
-    <span class="el-popover__reference-wrapper" ref="wrapper">
-      <slot name="reference"></slot>
-    </span>
-  </span>
-</template>
-```
-
 > [!CAUTION]
-> 注意，图片采用的是 popover.js@2.x 的写法，代码里面是 element-ui@2.15.14 自己将 popover.js@1.x 复制一份到项目中使用的，固定只有几个功能
+> 注意，代码里面是 element-ui@2.15.14 自己将 popover.js@1.x 复制一份到项目中使用的，固定只有几个功能
 
 我们可以看到定义了 `popper` ref `reference` slot 正是 popover.js 必须要的 `const instance = createPopper(reference, popper);`;
-
 定义了四种触发方式 hover 激活 click 激活 focus 激活 手动激活
-
-```js
-mounted() {
-    // 获取 popper.js 需要的 触发器和绑定元素
-    let reference = this.referenceElm = this.reference || this.$refs.reference;
-    const popper = this.popper || this.$refs.popper;
-    // 如果没找，就直接 用 第一个子元素
-    if (!reference && this.$refs.wrapper.children) {
-      reference = this.referenceElm = this.$refs.wrapper.children[0];
-    }
-    // 可访问性
-    if (reference) {
-      // 设置属性
-      addClass(reference, 'el-popover__reference');
-      reference.setAttribute('aria-describedby', this.tooltipId);
-      reference.setAttribute('tabindex', this.tabindex); // tab序列
-      popper.setAttribute('tabindex', 0);
-
-      // 默认绑定的是 hover 或者 手动触发的时候
-      if (this.trigger !== 'click') {
-
-        on(reference, 'focusin', () => {
-          this.handleFocus();
-          const instance = reference.__vue__;
-          if (instance && typeof instance.focus === 'function') {
-            instance.focus();
-          }
-        });
-        on(popper, 'focusin', this.handleFocus);
-        on(reference, 'focusout', this.handleBlur);
-        on(popper, 'focusout', this.handleBlur);
-      }
-      // 点击或者键盘事件，把 popup 关闭
-      on(reference, 'keydown', this.handleKeydown);
-      on(reference, 'click', this.handleClick);
-    }
-    // 当触发是click 的时候
-    if (this.trigger === 'click') {
-      on(reference, 'click', this.doToggle);
-      on(document, 'click', this.handleDocumentClick);
-    } else if (this.trigger === 'hover') {
-      on(reference, 'mouseenter', this.handleMouseEnter);
-      on(popper, 'mouseenter', this.handleMouseEnter);
-      on(reference, 'mouseleave', this.handleMouseLeave);
-      on(popper, 'mouseleave', this.handleMouseLeave);
-      // 当触发是 focus 的时候
-    } else if (this.trigger === 'focus') {
-      if (this.tabindex < 0) {
-        console.warn('[Element Warn][Popover]a negative taindex means that the element cannot be focused by tab key');
-      }
-      if (reference.querySelector('input, textarea')) {
-        on(reference, 'focusin', this.doShow);
-        on(reference, 'focusout', this.doClose);
-      } else {
-        on(reference, 'mousedown', this.doShow);
-        on(reference, 'mouseup', this.doClose);
-      }
-    }
-  }
-
-```
-
 这也仅仅是在组件挂载的时候，做了一些的监听动作，使其 popover 可以消失 和显示， 这还没有 重点，我们可以看到 ，他引入了一个 vue-popover 的 js 文件 作为 mixins 合并到当前的组件中去。
 
 ::: tabs
@@ -555,14 +463,9 @@ if (!Vue.prototype.$isServer) {
 
 export default PopupManager
 ```
-
-
 :::
 
+## 总结：
 
-
-## 分析图
-
-::: demo-wrapper img no-padding
-![viewport](/images/frame/viewport.png)
-:::
+1. Popover 是通过 `reference` 进行定位的位置，元素位置在哪里，popover 就在哪里
+  - 这是我们想到的一个点，一般, 需求上允许出现单个 popover 的时候，我们可以在全局使用一个popover, 通过位置计算改变 `reference` 元素的位置
