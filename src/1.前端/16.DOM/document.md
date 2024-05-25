@@ -1,8 +1,10 @@
 ---
-title: Document（文档对象模型）
+title: Document
 author: 李嘉明
 createTime: 2024/05/26 00:38:03
 permalink: /article/hq2p9x43/
+tags:
+  - DOM
 ---
 
 :::tip
