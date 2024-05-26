@@ -1,5 +1,5 @@
 ---
-title: Document
+title: Document 文档
 author: 李嘉明
 createTime: 2024/05/26 00:38:03
 permalink: /article/hq2p9x43/
@@ -14,6 +14,13 @@ document 表示整个 HTML 文档，它是 DOM 的根节点。通过 document �
 
 ## 属性
 ```js
+document.all  //所有的元素组成的集合（类数组对象）
+//document.all的妙用
+if (document.all) {
+    //说明是IE浏览器   IE10以及以下版本
+} else {
+    // 说明非IE浏览器 IE11以及EDGE 
+}
 document.doctype        //文档类型
 document.documentElement //返回当前文档的根节点
 document.defaultView    //返回document对象所在的window对象
