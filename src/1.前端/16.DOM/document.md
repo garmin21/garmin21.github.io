@@ -22,7 +22,7 @@ if (document.all) {
     // 说明非IE浏览器 IE11以及EDGE 
 }
 document.doctype        //文档类型
-document.documentElement //返回当前文档的根节点
+document.documentElement //获取html元素
 document.defaultView    //返回document对象所在的window对象
 document.body       //返回当前文档的<body>节点
 document.head       //[返回当前文档的<head>节点
@@ -38,17 +38,17 @@ document.stylesheets//返回当前网页的所有样式表
 
 //文档信息属性
 document.documentURI//表示当前文档的网址
-document.URL//返回当前文档的网址
-document.domain//返回当前文档的域名
-document.lastModified//返回当前文档最后修改的时间戳
+document.URL//页面地址（只读）
+document.domain//返回当前文档的域名（只读）
+document.lastModified//返回当前文件的最后一次修改时间（只读）
 document.location//返回location对象，提供当前文档的URL信息
-document.referrer//返回当前文档的访问来源
-document.title//返回当前文档的标题
+document.referrer//历史记录中上一个地址（只读）
+document.title//返回当前文档的网页标题（可读可写）
 document.characterSet //属性返回渲染当前文档的字符集，比如UTF-8、ISO-8859-1。
 document.readyState //返回当前文档的状态
 document.designMode //控制当前文档是否可编辑，可读写
 document.compatMode //返回浏览器处理文档的模式
-document.cookie//用来操作cookie
+document.cookie//用来操作cookie 会话内容（可读可写）
 ```
 
 ## 读写方法
@@ -93,7 +93,11 @@ document.dispatchEvent(event)//触发事件
 ## 其他
 
 ```js
+document.write()
 document.hasFocus(); //返回一个布尔值，表示当前文档之中是否有元素被激活或获得焦点。
 document.adoptNode(externalNode); //将某个节点，从其原来所在的文档移除，插入当前文档，并返回插入后的新节点。
 document.importNode(externalNode，deep)//从外部文档拷贝指定节点，插入当前文档。
 ```
+
+
+

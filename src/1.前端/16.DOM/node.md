@@ -51,3 +51,18 @@ Node.remove() // 自杀，有一定兼容性问题
 parentElement.replaceChild(newNode, oldNode)   //替换子节点, 会把旧的节点删掉换成新的节点
 element.cloneNode(true)  // 克隆节点	true 深度克隆，元素自己和后代元素都会克隆  | false (默认)  只克隆元素自己，不克隆后代元素
 ```
+
+
+### documentFragment / 文档片段
+
+```js
+// 也是一类节点， nodeType是11， 不是元素。相当于一个一次性塑料袋
+// 创建一个新的空白的文档片段对象
+var df = document.createDocumentFragment();
+
+// 可以给df对象添加子节点，df节点也可以作为其他元素的子节点
+// df对象不会出先在dom树中
+
+// 应用场景：
+// 	如果连续给一个元素添加多个子元素，可以先把子元素添加到df对象中，最后把df对象添加到父元素中！ 减少浏览器渲染次数。
+```

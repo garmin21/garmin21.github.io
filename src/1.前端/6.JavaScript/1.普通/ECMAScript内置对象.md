@@ -3,6 +3,8 @@ title: ECMAScript内置对象
 author: 李嘉明
 createTime: 2024/05/26 20:19:36
 permalink: /article/h63f8eca/
+tags:
+  - javascript
 ---
 
 ### 1 Boolean对象
