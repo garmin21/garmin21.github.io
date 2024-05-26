@@ -8,6 +8,7 @@ tags:
 ---
 
 :::tip
+
 1. element 表示 HTML 文档中的一个具体元素。每个 HTML 元素都是一个 element 对象的实例。
 2. element 对象代表文档中的一个独立的元素节点，可以访问和操作元素的标签名、属性、样式、内容等。
 3. element 对象是 Node 接口的子接口，它继承了 Node 接口中的一些属性和方法。
@@ -30,6 +31,25 @@ Element.outerHTML; //返回指定元素节点的所有HTML代码，包括它自�
 Element.className; //返回当前元素的class属性，可读写
 Element.classList; //返回当前元素节点的所有class集合
 Element.dataset; //返回元素节点中所有的data-*属性。
+Element.style //返回元素节点的样式描述对象
+
+// ie8以下
+function hasClass(element, className) {
+  return new RegExp(className, 'gi').test(element.className);
+}
+//移除class
+function removeClass(element, className) {
+  element.className = element.className.replace(
+    new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'),
+    ''
+  );
+}
+
+// ie10
+Element.classList.add(className); //新增
+Element.classList.remove(className); //删除
+Element.classList.contains(className); //是否包含
+Element.classList.toggle(className); // toggle class
 ```
 
 ### 节点相关属性
@@ -60,11 +80,30 @@ Element.offsetWidth//返回元素的水平宽度(包含border,padding)
 。
 Element.offsetLeft//返回当前元素左上角相对于Element.offsetParent节点的垂直偏移
 Element.offsetTop //返回水平位移
-Element.style //返回元素节点的样式描述对象
-
 ```
 
 ## 方法
+
+### 样式方法
+
+```js
+Element.setAttribute('style', '') // 设置 style 属性
+Element.style.backgroundColor = 'red' // 设置行内样式 背景颜色 为 red
+Element.style.cssText //用来读写或删除整个style属性
+Element.style.setProperty(propertyName,value) //设置css属性
+element.style.getPropertyValue(property) //获取css属性
+Element.style.removeProperty(property)//删除css属性
+
+//操作非内联样式
+
+// ie8
+Element.currentStyle[attrName]
+// ie9+
+window.getComputedStyle(el,null)[attrName]
+window.getComputedStyle(el,null).getPropertyValue(attrName)
+//伪类
+window.getComputedStyle(el, ':after')[attrName]
+```
 
 ### 位置方法
 
