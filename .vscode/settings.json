@@ -14,6 +14,6 @@
     "unobserve",
     "vnode"
   ],
-  "liveServer.settings.port": 5501,
+  "liveServer.settings.port": 4399,
   "editor.defaultFormatter": "esbenp.prettier-vscode"
 }

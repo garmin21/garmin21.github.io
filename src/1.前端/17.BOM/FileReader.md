@@ -1,5 +1,5 @@
 ---
-title: FileReader对象 
+title: FileReader对象
 author: 李嘉明
 createTime: 2024/05/26 21:27:10
 permalink: /article/a3eerq3w/
@@ -66,8 +66,6 @@ reader.abort()
 
  `ArrayBuffer`也是一个构造函数，可以分配一段可以存放数据的连续内存区域 
 
-![](C:\Users\LJ\OneDrive\我的图片\前端学习\JAVAscript\snipaste_20200823_173355.png)
-
 ```js
 const buffer = new ArrayBuffer(8);
 // ArrayBuffer 对象有实例属性 byteLength ，表示当前实例占用的内存字节长度（单位字节）
@@ -103,7 +101,6 @@ console.log(dataView.getInt16(0)); // 258
 
 实现方法
 
-![](C:\Users\LJ\OneDrive\我的图片\前端学习\JAVAscript\snipaste_20200823_174338.png)
 
 ```js
 const buffer = new ArrayBuffer(8);
@@ -119,6 +116,4 @@ console.log(int16Array.length); // 4
 ### Blob对象
 
 >  `Blob`是用来支持文件操作的。简单的说：在`JS`中，有两个构造函数 `File` 和 `Blob`, 而`File`继承了所有`Blob`的属性。  `File`对象可以看作一种特殊的`Blob`对象。 
-
-![](C:\Users\LJ\OneDrive\我的图片\前端学习\JAVAscript\snipaste_20200823_175252.png)
 
