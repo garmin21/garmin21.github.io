@@ -169,10 +169,12 @@ height
 
 #### 属性
 
-```
-userAgent   获取用户浏览器的信息
-language 获取浏览器当前所处的语言环境
-platform 获取当前平台，帮助区分 Windows/Linux/Mac 等
+```js
+navigator.userAgent   // 获取用户浏览器的信息
+navigator.language    // 获取浏览器当前所处的语言环境
+navigator.platform    // 获取当前平台，帮助区分 Windows/Linux/Mac 等
+navigator.clipboard   // 原生提供的复制api
+// navigator.clipboard.writeText('你好？？？')
 ```
 
 
