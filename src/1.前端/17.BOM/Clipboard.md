@@ -1,8 +1,10 @@
 ---
-title: navigator.clipboard 
+title: navigator.clipboard
 author: 李嘉明
 createTime: 2024/05/27 13:32:27
 permalink: /article/gbdkmju1/
+tags:
+  - BOM
 ---
 
 浏览器, 复制, 粘贴, 剪切 API
