@@ -71,3 +71,20 @@ document.getElementById('writeText').addEventListener('click', () => {
 });
 ```
 :::
+
+
+## 兼容方式
+
+```js
+const copyCore = (value) => {
+  const input = document.createElement("input");
+  input.setAttribute("readonly", "readonly");
+  input.style.cssText = 'position: absolute;left: -9999px'
+  input.setAttribute("value", value);
+  document.body.appendChild(input);
+  input.select();
+  input.setSelectionRange(0, input.value.length);
+  document.execCommand("Copy");
+  document.body.removeChild(input);
+};
+```

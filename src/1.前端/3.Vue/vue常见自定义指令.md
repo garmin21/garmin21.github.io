@@ -24,8 +24,7 @@ const vCopy: DirectiveOptions = {
       }
       const input = document.createElement("input");
       input.setAttribute("readonly", "readonly");
-      input.style.position = "absolute";
-      input.style.left = "-9999px";
+      input.style.cssText = 'position: absolute;left: -9999px'
       input.setAttribute("value", el.$value);
       document.body.appendChild(input);
       input.select();
