@@ -3,7 +3,7 @@ title: MVC/MVP/MVVM
 createTime: 2022/04/20 02:32:11
 author: 李嘉明
 tags:
-  - javascript
+  - 设计模式
 permalink: /article/ud3m8zxg/
 ---
 
