@@ -7,6 +7,18 @@ tags:
   - javascript
 ---
 
+### 属性
+
+- global		RegExp 对象是否具有标志 g。	
+- ignoreCase	RegExp 对象是否具有标志 i。	
+- lastIndex	一个整数，标示开始下一次匹配的字符位置。	
+- multiline	RegExp 对象是否具有标志 m。	
+- source		正则表达式的源文本。
+
+### 方法
+- exec()		检索字符串中指定的值。返回找到的值，并确定其位置。	
+- test()		检索字符串中指定的值。返回 true 或 false。
+
 ### 1.1 在JS中如何定义正则
 
 ```js
