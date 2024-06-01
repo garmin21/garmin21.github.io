@@ -1,8 +1,10 @@
 ---
 title: DOM节点操作
 createTime: 2022/04/16 10:51:17
-author: jm-garming
-permalink: /interview-question/y5w6l1js/
+author: 李嘉明
+tags:
+  - javascript
+permalink: /article/y5w6l1js/
 ---
 
 ::: tip 提问

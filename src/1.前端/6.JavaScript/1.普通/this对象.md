@@ -1,8 +1,10 @@
 ---
 title: this对象
 createTime: 2022/04/15 04:11:13
-author: jm-garming
-permalink: /interview-question/wdcjym47/
+author: 李嘉明
+tags:
+  - javascript
+permalink: /article/wdcjym47/
 ---
 
 ::: tip 提问

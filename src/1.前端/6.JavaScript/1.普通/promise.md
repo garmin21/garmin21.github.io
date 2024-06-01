@@ -1,8 +1,10 @@
 ---
 title: promise
 createTime: 2022/04/17 05:53:48
-author: jm-garming
-permalink: /interview-question/a895fu8f/
+author: 李嘉明
+tags:
+  - javascript
+permalink: /article/a895fu8f/
 ---
 
 ::: tip 提问

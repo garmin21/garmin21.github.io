@@ -1,9 +1,14 @@
 ---
-title: 监听元素尺寸 ResizeObserver
+title: ResizeObserver
 author: 李嘉明
 createTime: 2024/05/11 22:49:25
 permalink: /article/9e5vginp/
+tags:
+  - BOM
 ---
+
+ResizeObserver 是一个 Web API，用于 监听元素尺寸 发生变化
+<!-- more -->
 
 :::tip
 ResizeObserver 接口可以监听到 Element 的内容区域或 SVGElement 的边界框改变。内容区域则需要减去内边距 padding。（有关内容区域、内边距资料见盒子模型 ）
@@ -41,3 +46,8 @@ resize.observe(textarea);
 1. `resize.observe` 启动监听元素
 2. `resize.disconnect` 取消对目标元素的监听
 3. `resize.unobserve` 结束对目标元素的监听
+
+
+:::tip 
+监听浏览器窗口发生变化，可以直接监听`document.body`
+:::

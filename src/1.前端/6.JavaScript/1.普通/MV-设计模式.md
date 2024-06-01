@@ -1,8 +1,10 @@
 ---
 title: MVC/MVP/MVVM
 createTime: 2022/04/20 02:32:11
-author: jm-garming
-permalink: /interview-question/ud3m8zxg/
+author: 李嘉明
+tags:
+  - javascript
+permalink: /article/ud3m8zxg/
 ---
 
 ::: tip 提问

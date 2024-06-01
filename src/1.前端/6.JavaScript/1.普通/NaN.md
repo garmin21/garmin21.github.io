@@ -1,8 +1,10 @@
 ---
 title: NaN
 createTime: 2022/04/15 03:35:01
-author: jm-garming
-permalink: /interview-question/jilzuxpt/
+author: 李嘉明
+tags:
+  - javascript
+permalink: /article/jilzuxpt/
 ---
 
 ::: tip 提问

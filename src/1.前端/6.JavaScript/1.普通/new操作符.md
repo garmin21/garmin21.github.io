@@ -1,8 +1,10 @@
 ---
 title: new操作符
 createTime: 2022/04/22 06:57:30
-author: jm-garming
-permalink: /interview-question/chnx193c/
+author: 李嘉明
+tags:
+  - javascript
+permalink: /article/chnx193c/
 ---
 
 ::: tip 提问
