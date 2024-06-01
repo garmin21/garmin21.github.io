@@ -11,6 +11,8 @@ MutationObserver 是一个 Web API，用于监听 DOM 的变化
 
 <!-- more -->
 
+参数是一个回调函数，每当被指定的节点或子树以及配置项有 DOM 变动时会被调用。回调函数拥有两个参数：一个是描述所有被触发改动的 MutationRecord 对象数组，另一个是调用该函数的 MutationObserver 对象
+
 :::tip
 
 1. 子节点的添加或删除：当目标元素的子节点添加或删除时，MutationObserver 可以捕获这些变化。这包括通过 appendChild、removeChild、insertBefore 等方法添加或删除子节点的操作。
@@ -56,7 +58,7 @@ MutationObserver 是一个 Web API，用于监听 DOM 的变化
 ```js
 const element01 = document.getElementById('container01');
 element01.textContent = 'hello';
-const observer01 = new MutationObserver((mutations) => {
+const observer01 = new MutationObserver((mutations, observer) => {
   mutations.forEach((mutation) => {
     console.log(mutation, '全部属性');
     console.log(mutation.addedNodes, '添加节点的NodeList');
