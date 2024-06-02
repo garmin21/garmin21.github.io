@@ -8,47 +8,6 @@ author: jm-garming
 ---
 
 
-## 实现一个 v-copy 指令，仅限平台 H5
-
-```js
-import { DirectiveOptions } from "vue";
-import { DirectiveBinding } from "vue/types/options";
-import FmToast from "@fm/vue-ui/components/toast";
-
-const vCopy: DirectiveOptions = {
-  bind: function (el: any, binding: DirectiveBinding) {
-    el.$value = binding.value;
-    const handler = () => {
-      if (!el.$value) {
-        (FmToast as any).error("error");
-      }
-      const input = document.createElement("input");
-      input.setAttribute("readonly", "readonly");
-      input.style.cssText = 'position: absolute;left: -9999px'
-      input.setAttribute("value", el.$value);
-      document.body.appendChild(input);
-      input.select();
-      input.setSelectionRange(0, input.value.length);
-      if (document.execCommand("copy")) {
-        const result = document.execCommand("copy");
-        result && (FmToast as any).success("success");
-      }
-      document.body.removeChild(input);
-    };
-    el.handler = handler;
-    el.addEventListener("click", el.handler);
-  },
-  componentUpdated: function (el: any, binding: DirectiveBinding) {
-    el.$value = binding.value;
-  },
-  unbind: function (el: any) {
-    el.removeEventListener("click", el.handler);
-  },
-};
-
-export default vCopy;
-```
-
 ## v-dialogDrag element-ui 弹窗拖拽指令
 
 ```js

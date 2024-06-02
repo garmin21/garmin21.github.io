@@ -71,7 +71,7 @@ export default definePlumeNotesItemConfig({
     // },
     {
       dir: 'CSS 预处理器',
-      collapsed: false,
+      collapsed: true,
       items: [
         'SCSS'
       ],
