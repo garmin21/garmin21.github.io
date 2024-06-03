@@ -4,10 +4,7 @@ import theme from './.vuepress/theme'
 import { defineUserConfig } from 'vuepress'
 
 const __dirname = getDirname(import.meta.url)
-
 const resolve = (...dirs) => path.resolve(__dirname, ...dirs)
-
-// const isDev = () => process.env.NODE_ENV === 'development'
 
 export default defineUserConfig({
   bundler: viteBundler(),

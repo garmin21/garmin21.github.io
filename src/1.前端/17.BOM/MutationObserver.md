@@ -22,7 +22,7 @@ MutationObserver 是一个 Web API，用于监听 DOM 的变化
 
 3. 元素的内容变化：当目标元素的文本内容或子节点的内容发生变化时，MutationObserver 可以监听到这些变化。这包括通过修改元素的 textContent 或 innerHTML 属性来改变元素内容的操作。
    使用 MutationObserver，你可以注册一个回调函数，当指定的 DOM 变化发生时，该回调函数会被触发。你可以在回调函数中处理需要针对变化执行的逻辑。
-   :::
+:::
 
 ## 示例
 
@@ -114,3 +114,38 @@ function dome6() {
 ```
 
 :::
+
+
+## 方法
+
+1. mutations：节点变化记录列表
+2. observer：构造 MutationObserver 对象。
+
+MutationObserver 对象有三个方法，分别如下：
+
+1. observe：设置观察目标，接受两个参数，target：观察目标，options：通过对象成员来设置观察选项
+2. disconnect：阻止观察者观察任何改变
+3. takeRecords：清空记录队列并返回里面的内容
+
+
+```js
+// observe 方法中 options 参数有已下几个选项：
+
+childList// 设置 true，表示观察目标子节点的变化，比如添加或者删除目标子节点，不包括修改子节点以及子节点后代的变化
+attributes // 设置 true，表示观察目标属性的改变
+characterData // 设置 true，表示观察目标数据的改变
+subtree// 设置为 true，目标以及目标的后代改变都会观察
+attributeOldValue// 如果属性为 true 或者省略，则相当于设置为 true，表示需要记录改变前的目标属性值，设置了 attributeOldValue 可以省略 attributes 设置
+characterDataOldValue// 如果 characterData 为 true 或省略，则相当于设置为 true,表示需要记录改变之前的目标数据，设置了 characterDataOldValue 可以省略 characterData 设置
+attributeFilter// 如果不是所有的属性改变都需要被观察，并且 attributes 设置为 true 或者被忽略，那么设置一个需要观察的属性本地名称（不需要命名空间）的列表
+```
+
+```js
+// MutationObserver 有以下特点：
+
+// MutationObserver 则是异步触发，DOM 发生变动以后，并不会马上触发，而是要等到当前所有 DOM 操作都结束后才触发。
+
+1. 它等待所有脚本任务完成后才会运行，即采用异步方式
+2. 它把 DOM 变动记录封装成一个数组进行处理，而不是一条条地个别处理 DOM 变动。
+3. 它即可以观察发生在 DOM 节点的所有变动，也可以观察某一类变动
+```

@@ -167,6 +167,16 @@ window.getComputedStyle(el,null).getPropertyValue(attrName)
 window.getComputedStyle(el, ':after')[attrName]
 ```
 
+**getComputedStyle 和 element.style 对比**
+:::tip
+1. getComputedStyle 和 element.style 的相同点就是二者返回的都是 CSSStyleDeclaration 对象。
+
+而不同点就是：
+1. element.style 读取的只是元素的内联样式，即写在元素的 style 属性上的样式；而 getComputedStyle 读取的样式是最终样式，包括了内联样式、嵌入样式和外部样式。
+
+2. element.style 既支持读也支持写，我们通过 element.style 即可改写元素的样式。而 getComputedStyle 仅支持读并不支持写入。我们可以通过使用 getComputedStyle 读取样式，通过 element.style 修改样式
+:::
+
 ### 属性方法
 
 ```js

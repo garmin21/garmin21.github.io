@@ -3,6 +3,8 @@ title: 自定义事件 CustomEvent
 author: 李嘉明
 createTime: 2024/06/02 21:37:55
 permalink: /article/e6ze2pvq/
+tags:
+  - DOM
 ---
 
 :::normal-demo
