@@ -58,7 +58,7 @@ fn();
 
 ```js
 /**
- * 1. log.before 将 plus 传入并执行后， 此时self 就是log ,返回一个闭包，在闭包中将this 绑定给了plus函数，到这一步，返回的函数为
+ * log.before 将 plus 传入并执行后， 此时self 就是log ,返回一个闭包，在闭包中将this 绑定给了plus函数，到这一步，返回的函数为
  * function x() {
  *  const res = plus.apply(this, arguments)
  *  return log.apply(this, [res]);
