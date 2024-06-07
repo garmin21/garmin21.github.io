@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntersectionObserver</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .inner {
+            height: 2000px;
+            position: relative;
+        }
+        .box{
+            position: absolute;
+            bottom: 0;
+            width: 150px;
+            height: 150px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <div class="box"></div>
+        </div>
+    </div>
+
+
+    <script>
+        const box = document.querySelector('.box');
+        const options = {}
+
+        // 页面加载 handel 一定会触发一次
+        const io = new IntersectionObserver(handel, options);
+        // 开始观察
+        io.observe(box);
+
+
+        function handel(entries) {
+            const IntersectionObserverEntry = entries.shift();
+            if(IntersectionObserverEntry.isIntersecting) {
+                document.title = '进来了！！！';
+                // 停止观察
+                // io.unobserve(box)
+            } else {
+                document.title = '我出去了！！！'
+            }
+        }
+
+
+    </script>
+</body>
+</html>
