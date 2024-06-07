@@ -15,12 +15,56 @@ permalink: /article/1opzghvi/
 
 目前有一个新的 IntersectionObserver API，可以自动"观察"元素是否可见，Chrome 51+ 已经支持。由于可见（visible）的本质是，目标元素与视口产生一个交叉区，所以这个 API 叫做"交叉观察器"。
 
+
+[阮一峰的文档](http://www.ruanyifeng.com/blog/2016/11/intersectionobserver_api.html)
+
 ## 用法
 
 ```js
-var io = new IntersectionObserver(callback, option);
-// callback 是目标元素可见后触发的回调函数
+const callback = entries => {  
+  // ...  
+}; 
+ 
+const options = {  
+  root: document.querySelector('#scroll'),
+  rootMargin: '0px',  
+  threshold: [0]  
+};  
+
+const observer = new IntersectionObserver(callback, options);  
+const ele = document.querySelector('.img');  
+observer.observe(ele); 
+```
+
+**回调函数**
+```js
+const callback = (entries, observer) => {   
+  entries.forEach(entry => {  
+    //   entry.boundingClientRect  
+    //   entry.intersectionRatio  
+    //   entry.intersectionRect  
+    //   entry.isIntersecting  
+    //   entry.rootBounds  
+    //   entry.target  
+    //   entry.time  
+  });  
+
+};
+entry.boundingClientRect // 目标元素的区域信息，getBoundingClientRect()的返回值
+entry.intersectionRatio  // 目标元素的可见比率
+entry.intersectionRect   // 目标元素与根元素交叉的区域信息
+entry.isIntersecting     // 是否进入可视区域
+entry.rootBounds         // 根元素的矩形区域信息
+entry.target             // 被观察的目标，是一个DOM节点
+entry.time               // 可见性发生变化的时间,相交发生时距离页面打开时的毫秒数.精度为微秒。
+```
+
+**options**
+```js
 // option 是配置对象（该参数可选）
+option.root       // 目标元素所在的容器节点，如果不指定根节点，默认文档为根节点。
+option.rootMargin // 围绕根元素的边距，类似于css的margin属性。注意这个单位为px
+option.threshold  // 相交的比例，既可以是一个数字也可以是一个数组。取值在0-1之间。
 ```
 
 ## API
@@ -35,14 +79,15 @@ io.unobserve(element);
 
 // 关闭观察器
 io.disconnect();
-```
 
-如果需要拿到这个元素的位置信息，可以在回调函数 入参是一个 entries 数组
-
-```js
-function callback(entries) {
-  // entries[0] 每个成员都是一个IntersectionObserverEntry对象, 观察的元素有几个，entries就会有多大
-}
+// 返回一个IntersectionObserverEntry对象数组。
+io.takeRecords()
+/**
+ * 每个对象的目标元素都包含每次相交的信息。
+ * takeRecords是同步的，IntersectionObserver的回调是异步  的，
+ * 且IntersectionObserver的回调时间最大是100ms，所以回调会在1-100ms内执行。
+ * 如果执行了异步回调，takeRecords()就会返回空数据组，如果同步先执行，则回调不执行。使用场景较少。
+ * /
 ```
 
 ## IntersectionObserverEntry 对象

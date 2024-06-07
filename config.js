@@ -7,7 +7,7 @@ const __dirname = getDirname(import.meta.url)
 const resolve = (...dirs) => path.resolve(__dirname, ...dirs)
 
 export default defineUserConfig({
-  port: 9527, // 指定端口号为 8080
+  // port: 9527, // 指定端口号为 8080
   bundler: viteBundler(),
   theme,
   base: '/',
