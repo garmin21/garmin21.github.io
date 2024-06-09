@@ -45,6 +45,14 @@ closed; // 返回窗口是否已被关闭。
 opener; // 返回对创建此窗口的窗口的引用。
 parent; // 返回父窗口。
 top; // 返回最顶层的先辈窗口。
+
+
+// 获取视口宽度
+// window.innerWidth 【ie8不认识】
+window.innerWidth || document.documentElement.clientWidth;
+// 获取视口高度
+// document.documentElement.clientHeight 获取的是视口的高度，不会被子元素的高度撑开,这是一种特殊情况
+window.innerHeight || document.documentElement.clientHeight;
 ```
 
 ### 方法
