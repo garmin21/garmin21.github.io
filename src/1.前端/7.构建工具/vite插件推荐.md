@@ -9,10 +9,6 @@ permalink: /article/8vac55c7/
 sticky: 10
 ---
 
-本文列出了一些在工作中常会用到的、比较好用的 `vite` 插件。
-
-<!-- more -->
-
 ## Framework
 
 ### Vue
