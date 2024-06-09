@@ -1,7 +1,7 @@
 ---
 title: ➖ Subtract
 createTime: 2022/12/01 08:04:27
-author: jm-garming
+author: 李嘉明
 permalink: /type-challenges/extreme/subtract/
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: ➖ Permutation
 createTime: 2022/12/01 03:53:00
-author: jm-garming
+author: 李嘉明
 permalink: /type-challenges/medium/permutation/
 ---
 

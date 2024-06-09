@@ -1,7 +1,7 @@
 ---
 title: ➖ Subsequence
 createTime: 2022/12/01 07:26:53
-author: jm-garming
+author: 李嘉明
 permalink: /type-challenges/medium/subsequence/
 ---
 

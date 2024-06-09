@@ -1,7 +1,7 @@
 ---
 title: data为什么必须是函数
 createTime: 2022/04/23 02:53:20
-author: jm-garming
+author: 李嘉明
 permalink: /interview-question/rumwg3ew/
 ---
 

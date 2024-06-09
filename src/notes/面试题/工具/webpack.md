@@ -1,7 +1,7 @@
 ---
 title: webpack
 createTime: 2022/04/18 07:04:03
-author: jm-garming
+author: 李嘉明
 permalink: /interview-question/e2tpl1sq/
 ---
 

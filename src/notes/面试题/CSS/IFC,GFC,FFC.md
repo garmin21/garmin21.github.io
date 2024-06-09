@@ -1,7 +1,7 @@
 ---
 title: IFC,GFC,FFC
 createTime: 2022/04/22 07:23:13
-author: jm-garming
+author: 李嘉明
 permalink: /interview-question/6tzvt9fs/
 ---
 

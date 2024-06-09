@@ -1,7 +1,7 @@
 ---
 title: 在NodeJs项目中使用ECMAScript module
 createTime: 2022/06/17 02:04:57
-author: jm-garming
+author: 李嘉明
 tags:
   - node
 permalink: /article/7jzjudus/

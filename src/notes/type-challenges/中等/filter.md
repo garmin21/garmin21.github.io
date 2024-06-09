@@ -1,7 +1,7 @@
 ---
 title: ➖ Filter
 createTime: 2022/12/01 07:27:41
-author: jm-garming
+author: 李嘉明
 permalink: /type-challenges/medium/filter/
 ---
 

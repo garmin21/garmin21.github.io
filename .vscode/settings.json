@@ -4,6 +4,8 @@
     "beforeunload",
     "compat",
     "dblclick",
+    "focusin",
+    "focusout",
     "jsdelivr",
     "jsplumb",
     "jsplumbtoolkit",

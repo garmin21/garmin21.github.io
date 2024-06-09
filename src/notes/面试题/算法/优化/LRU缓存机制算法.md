@@ -1,7 +1,7 @@
 ---
 title: LRU缓存机制算法
 createTime: 2024/04/01 06:39:29
-author: jm-garming
+author: 李嘉明
 permalink: /interview-question/5z48vy51/
 ---
 

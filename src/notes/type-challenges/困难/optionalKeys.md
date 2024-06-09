@@ -1,7 +1,7 @@
 ---
 title: ➖ OptionalKeys
 createTime: 2022/12/01 07:44:33
-author: jm-garming
+author: 李嘉明
 permalink: /type-challenges/hard/optional-keys/
 ---
 

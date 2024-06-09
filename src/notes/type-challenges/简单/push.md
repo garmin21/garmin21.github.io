@@ -1,7 +1,7 @@
 ---
 title: ✔️ Push
 createTime: 2022/12/01 04:18:04
-author: jm-garming
+author: 李嘉明
 permalink: /type-challenges/easy/push/
 ---
 

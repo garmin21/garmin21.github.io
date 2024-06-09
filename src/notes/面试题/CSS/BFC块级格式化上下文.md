@@ -1,7 +1,7 @@
 ---
 title: BFC块级格式化上下文
 createTime: 2022/04/13 02:33:55
-author: jm-garming
+author: 李嘉明
 permalink: /interview-question/p1gn97x5/
 ---
 

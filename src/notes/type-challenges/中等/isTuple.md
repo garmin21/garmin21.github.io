@@ -1,7 +1,7 @@
 ---
 title: ➖ IsTuple
 createTime: 2022/12/01 07:25:21
-author: jm-garming
+author: 李嘉明
 permalink: /type-challenges/medium/is-tuple/
 ---
 

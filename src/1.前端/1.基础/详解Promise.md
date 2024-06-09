@@ -2,7 +2,7 @@
 title: 详解 Promise
 createTime: 2020/11/22 12:58:28
 permalink: /article/q40nq4hv/
-author: jm-garming
+author: 李嘉明
 tags:
   - javascript
 ---

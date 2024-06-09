@@ -1,7 +1,7 @@
 ---
 title: git-hook
 createTime: 2022/04/18 09:17:44
-author: jm-garming
+author: 李嘉明
 permalink: /interview-question/3hdch7z2/
 ---
 

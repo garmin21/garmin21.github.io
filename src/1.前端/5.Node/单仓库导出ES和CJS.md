@@ -1,7 +1,7 @@
 ---
 title: 单仓库实现同时导出esm、cjs
 createTime: 2022/04/06 08:33:04
-author: jm-garming
+author: 李嘉明
 tags:
   - node
 permalink: /article/exports-esm-and-cjs/

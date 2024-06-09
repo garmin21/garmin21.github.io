@@ -1,7 +1,7 @@
 ---
 title: ✔️ Tuple to Object
 createTime: 2022/12/01 12:59:56
-author: jm-garming
+author: 李嘉明
 permalink: /type-challenges/easy/tuple-to-object/
 ---
 

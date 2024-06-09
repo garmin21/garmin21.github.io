@@ -3,7 +3,7 @@ title: VSCode 常用插件推荐
 lang: zh-CN
 createTime: 2018/12/29 11:15:27
 permalink: /article/ofp08jd8/
-author: jm-garming
+author: 李嘉明
 tags:
   - VSCode
 ---

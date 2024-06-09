@@ -1,7 +1,7 @@
 ---
 title: CDN
 createTime: 2022/04/18 06:53:40
-author: jm-garming
+author: 李嘉明
 permalink: /interview-question/os6hn2b8/
 ---
 

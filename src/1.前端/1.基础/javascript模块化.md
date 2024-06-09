@@ -1,7 +1,7 @@
 ---
 title: javascript模块化 发展历程
 createTime: 2022/04/10 03:00:41
-author: jm-garming
+author: 李嘉明
 tags:
   - javascript
 permalink: /article/javascript-modules/

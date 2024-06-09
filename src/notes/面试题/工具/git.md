@@ -1,7 +1,7 @@
 ---
 title: git
 createTime: 2022/04/17 10:47:34
-author: jm-garming
+author: 李嘉明
 permalink: /interview-question/ku3jvbnj/
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: HTTP缓存机制
 createTime: 2019/08/24 12:18:39
-author: jm-garming
+author: 李嘉明
 tags:
   - http
 permalink: /article/c3ez957l/

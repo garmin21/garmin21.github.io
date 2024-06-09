@@ -1,7 +1,7 @@
 ---
 title: computed和watch
 createTime: 2022/04/23 05:36:27
-author: jm-garming
+author: 李嘉明
 permalink: /interview-question/y6r9lfa3/
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Type Challenges
 createTime: 2022/11/29 11:53:46
-author: jm-garming
+author: 李嘉明
 permalink: /type-challenges/
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: axios
 createTime: 2022/04/17 11:38:09
-author: jm-garming
+author: 李嘉明
 permalink: /interview-question/7fmfc0hi/
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: ✔️ If
 createTime: 2022/12/01 04:17:15
-author: jm-garming
+author: 李嘉明
 permalink: /type-challenges/easy/if/
 ---
 

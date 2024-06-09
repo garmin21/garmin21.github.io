@@ -1,7 +1,7 @@
 ---
 title: ✔️ Hello World
 createTime: 2022/11/30 02:14:31
-author: jm-garming
+author: 李嘉明
 permalink: /type-challenges/warm-up/hello-world/
 ---
 

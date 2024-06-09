@@ -1,7 +1,7 @@
 ---
 title: http2
 createTime: 2022/04/18 06:53:05
-author: jm-garming
+author: 李嘉明
 permalink: /interview-question/yiutzl7y/
 ---
 

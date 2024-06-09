@@ -1,7 +1,7 @@
 ---
 title: ➖ Flip
 createTime: 2022/12/01 07:24:33
-author: jm-garming
+author: 李嘉明
 permalink: /type-challenges/medium/flip/
 ---
 

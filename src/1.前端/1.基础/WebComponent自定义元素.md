@@ -5,7 +5,7 @@ tags:
   - html
 createTime: 2018/08/01 11:15:27
 permalink: /article/m63fd7lf/
-author: jm-garming
+author: 李嘉明
 ---
 
 在我们的 web 应用开发中，HTML 标签为我们提供了基础的应用和交互，我们使用 HTML 标签构建了各种各样丰富的 web 应用。

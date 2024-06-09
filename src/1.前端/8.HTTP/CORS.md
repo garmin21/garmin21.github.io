@@ -1,7 +1,7 @@
 ---
 title: 跨域资源共享(CORS)
 createTime: 2020/08/29 07:40:31
-author: jm-garming
+author: 李嘉明
 tags:
   - http
 permalink: /article/2f45bq9x/

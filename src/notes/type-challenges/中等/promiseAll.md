@@ -1,7 +1,7 @@
 ---
 title: ➖ Promise.all
 createTime: 2022/12/01 04:29:56
-author: jm-garming
+author: 李嘉明
 permalink: /type-challenges/medium/promise-all/
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: ✔️ Omit
 createTime: 2022/12/01 04:26:50
-author: jm-garming
+author: 李嘉明
 permalink: /type-challenges/medium/omit/
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: pnpm 包管理器
 createTime: 2022/05/10 03:50:47
-author: jm-garming
+author: 李嘉明
 tags:
   - node
 permalink: /article/84nu27cz/

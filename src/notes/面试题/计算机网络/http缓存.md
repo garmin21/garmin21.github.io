@@ -1,7 +1,7 @@
 ---
 title: http缓存
 createTime: 2022/04/18 06:52:45
-author: jm-garming
+author: 李嘉明
 permalink: /interview-question/2aywn2ah/
 ---
 

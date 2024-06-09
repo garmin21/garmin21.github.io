@@ -1,7 +1,7 @@
 ---
 title: jenkins
 createTime: 2022/04/18 07:02:27
-author: jm-garming
+author: 李嘉明
 permalink: /interview-question/8hujc044/
 ---
 

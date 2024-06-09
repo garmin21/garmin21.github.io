@@ -1,7 +1,7 @@
 ---
 title: CSP内容安全策略
 createTime: 2022/04/20 05:32:01
-author: jm-garming
+author: 李嘉明
 permalink: /interview-question/cl8r03ok/
 ---
 

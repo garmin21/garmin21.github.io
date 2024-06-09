@@ -1,7 +1,7 @@
 ---
 title: css三角形原理
 createTime: 2022/04/17 07:42:14
-author: jm-garming
+author: 李嘉明
 permalink: /interview-question/bvx4d2u5/
 ---
 

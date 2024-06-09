@@ -1,7 +1,7 @@
 ---
 title: ✔️ GetReturnType
 createTime: 2022/12/01 04:26:29
-author: jm-garming
+author: 李嘉明
 permalink: /type-challenges/medium/get-return-type/
 ---
 

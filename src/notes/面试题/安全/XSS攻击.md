@@ -1,7 +1,7 @@
 ---
 title: XSS攻击
 createTime: 2022/04/20 05:31:09
-author: jm-garming
+author: 李嘉明
 permalink: /interview-question/mvcgg9uz/
 ---
 

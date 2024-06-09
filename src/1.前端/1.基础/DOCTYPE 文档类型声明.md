@@ -2,7 +2,7 @@
 title: <!DOCTYPE> 文档类型声明
 createTime: 2018/03/14 01:06:52
 permalink: /article/s8udp6vp/
-author: jm-garming
+author: 李嘉明
 tags:
   - html
 ---

@@ -1,7 +1,7 @@
 ---
 title: ➖ LastOfArray
 createTime: 2022/12/01 04:29:16
-author: jm-garming
+author: 李嘉明
 permalink: /type-challenges/medium/last-of-array/
 ---
 

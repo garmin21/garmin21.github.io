@@ -1,7 +1,7 @@
 ---
 title: ✔️ Pick
 createTime: 2022/11/30 12:49:20
-author: jm-garming
+author: 李嘉明
 permalink: /type-challenges/easy/pick/
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: ➖ GetReadonlyKeys
 createTime: 2022/12/01 08:02:57
-author: jm-garming
+author: 李嘉明
 permalink: /type-challenges/extreme/get-readonly-keys/
 ---
 
