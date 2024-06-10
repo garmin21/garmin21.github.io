@@ -3,6 +3,8 @@ title: IntersectionObserver
 author: 李嘉明
 createTime: 2024/06/03 13:44:23
 permalink: /article/1opzghvi/
+tags:
+  - BOM
 ---
 
 检查某个元素是否进入了"视口"（viewport），即用户能不能看到它。
