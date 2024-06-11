@@ -73,7 +73,8 @@ export default definePlumeNotesItemConfig({
       dir: 'CSS 预处理器',
       collapsed: true,
       items: [
-        'SCSS'
+        'SCSS',
+        'bem'
       ],
     },
   ],
