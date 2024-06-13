@@ -1,5 +1,5 @@
 ---
-title: URL 对象
+title: window.URL 对象
 author: 李嘉明
 createTime: 2024/06/13 22:49:25
 permalink: /article/9e5vgin3/
