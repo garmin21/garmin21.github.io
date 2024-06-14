@@ -55,7 +55,7 @@ function broadcast(componentName, eventName, params) {
     if (name === componentName) {
       child.$emit.apply(child, [eventName].concat(params));
     } else {
-        // 不断的循环递归找子组件
+      // 不断的循环递归找子组件
       broadcast.apply(child, [componentName, eventName].concat([params]));
     }
   });
@@ -65,7 +65,7 @@ export default {
     dispatch(componentName, eventName, params) {
       var parent = this.$parent || this.$root;
       var name = parent.$options.componentName;
-      // 不断的while 循环，找父组件，判断，组件名称是否找到了，找到了就结束循环   
+      // 不断的while 循环，找父组件，判断，组件名称是否找到了，找到了就结束循环
       while (parent && (!name || name !== componentName)) {
         parent = parent.$parent;
 
@@ -85,15 +85,17 @@ export default {
 };
 ```
 
-@tab  vue-popper.js
+@tab vue-popper.js
 
 ```js
 // 查看 弹出框 el-popper 这篇文章，这里有
-
 ```
+
 :::
 
 ## 分析总结
 
 1. select 的 效果实现，还是通过 `vue-popper.js` 来进行实现，input 设置了`ref='reference'` 使用响应式变量 `visible` 控制其主体内容的显示和隐藏
 2. `setSelected` 方法用于设置选项数据. 很重要的一个方法。
+
+
