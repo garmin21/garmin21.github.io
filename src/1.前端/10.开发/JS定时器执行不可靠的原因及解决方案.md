@@ -25,20 +25,22 @@ tags:
 
 > **`window.requestAnimationFrame()`** 告诉浏览器——你希望执行一个动画，并且要求浏览器在下次重绘之前调用指定的回调函数更新动画。该方法需要传入一个回调函数作为参数，该回调函数会在浏览器下一次重绘之前执行，理想状态下回调函数执行次数通常是每秒 60 次（也就是我们所说的 60fsp），也就是每 16.7ms 执行一次，但是并不一定保证为 16.7 ms。
 
-const t = Date.now()
-function mySetTimeout (cb, delay) {
-let startTime = Date.now()
-loop()
-function loop () {
-if (Date.now() - startTime >= delay) {
-cb();
-return;
+```js
+const t = Date.now();
+function mySetTimeout(cb, delay) {
+  let startTime = Date.now();
+  loop();
+  function loop() {
+    if (Date.now() - startTime >= delay) {
+      cb();
+      return;
+    }
+    requestAnimationFrame(loop);
+  }
 }
-requestAnimationFrame(loop)
-}
-}
-mySetTimeout(()=>console.log('mySetTimeout' ,Date.now()-t),2000) //2005
-setTimeout(()=>console.log('SetTimeout' ,Date.now()-t),2000) // 2002
+mySetTimeout(() => console.log('mySetTimeout', Date.now() - t), 2000); //2005
+setTimeout(() => console.log('SetTimeout', Date.now() - t), 2000); // 2002
+```
 
 这种方案看起来像是增加了误差，这是因为 requestAnimationFrame 每 16.7ms 执行一次，因此它不适用于间隔很小的定时器修正。
 
@@ -76,7 +78,6 @@ export const mySetInterval = (message, time = 5000) => {
 ```
 
 **使用**
-
 
 ```js
 const off = mySetInterval(() => {
