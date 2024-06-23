@@ -46,7 +46,6 @@ opener; // 返回对创建此窗口的窗口的引用。
 parent; // 返回父窗口。
 top; // 返回最顶层的先辈窗口。
 
-
 // 获取视口宽度
 // window.innerWidth 【ie8不认识】
 window.innerWidth || document.documentElement.clientWidth;
@@ -80,12 +79,59 @@ scrollBy(x, y); // 页面滚动多少距离【像素】
 atob(); // 解码
 btoa(); // 编码
 
+// 该方法会在浏览器重绘之前来调用指定的回调函数, 返回一个 ID，唯一标识，用于取消回调函数
 requestAnimationFrame(callBack);
-//  该方法会在浏览器重绘之前来调用指定的回调函数
-// 返回一个requestID，唯一标识，用于取消回调函数
-cancelAnimationFrame(requestID);
-// 用于取消 回调函数
+cancelAnimationFrame(ID); // 用于取消 回调函数
 ```
+
+**requestAnimationFrame**
+:::normal-demo
+
+```css
+.outer {
+  width: 50px;
+  height: 50px;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+```
+
+```html
+<div class="outer">0</div>
+<button onclick="handleClick()">按钮</button>
+```
+
+```js
+let number = 0;
+let _isClick = false;
+const outer = document.querySelector('.outer');
+function step() {
+  if (_isClick) {
+    number++;
+  } else {
+    number--;
+  }
+
+  outer.style.marginLeft = number * 2 + 'px';
+  outer.textContent = number
+  if (_isClick && number < 100) {
+    window.requestAnimationFrame(step);
+  }
+
+  if (!_isClick && number > 0) {
+    window.requestAnimationFrame(step);
+  }
+}
+
+function handleClick() {
+  _isClick = !_isClick;
+  window.requestAnimationFrame(step);
+}
+```
+
+:::
 
 ## history
 

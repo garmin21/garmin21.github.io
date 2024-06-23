@@ -29,7 +29,8 @@
     "transitionstart",
     "Unchoose",
     "unobserve",
-    "vnode"
+    "vnode",
+    "vuex"
   ],
   "liveServer.settings.port": 4399,
   "editor.defaultFormatter": "esbenp.prettier-vscode"

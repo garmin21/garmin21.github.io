@@ -24,8 +24,8 @@ export default defineNavbarConfig([
             icon: 'carbon:server-proxy',
           },
           {
-            text: 'vite-plugin-image-placeholder',
-            link: 'https://github.com/garmin21/vite-plugin-image-placeholder',
+            text: 'vuepress-theme-plume',
+            link: 'https://plume.pengzhanbo.cn/guide/intro/',
             icon: 'bi:image-fill',
           },
         ],
