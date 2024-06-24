@@ -421,7 +421,7 @@ export function createStore() {
 
 2. `Vue.extend` 实例化生成的对象 和 ES6 关键字 `Class` 生成的对象有什么不一样？
 
-    -  Vue.extend 构造器生成的对象，会继承来着 Vue 实例的一些属性，生命周期等， 并且 拥有响应式属性 它的原型指向了 Vue, 
+    -  [Vue.extend](/learn-vue/w16ckh6m/)构造器生成的对象，会继承来着 Vue 实例的一些属性，生命周期等， 并且 拥有响应式属性 它的原型指向了 Vue, 
     -  ES6 `Class` 生成的对象，就是一个普通的Object 对象，他的原型指向的也是 `Object`，只能将其设置为 data 响应式数据源被vue递归劫持后才会拥有响应式
 
 
