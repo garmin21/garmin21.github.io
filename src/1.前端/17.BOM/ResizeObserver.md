@@ -1,5 +1,5 @@
 ---
-title: ResizeObserver
+title: ResizeObserver DOM尺寸监听
 author: 李嘉明
 createTime: 2024/05/11 22:49:25
 permalink: /article/9e5vginp/

@@ -1,5 +1,5 @@
 ---
-title: IntersectionObserver
+title: IntersectionObserver 交叉视口
 author: 李嘉明
 createTime: 2024/06/03 13:44:23
 permalink: /article/1opzghvi/

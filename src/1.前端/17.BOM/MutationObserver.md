@@ -1,5 +1,5 @@
 ---
-title: MutationObserver
+title: MutationObserver  DOM监听
 author: 李嘉明
 createTime: 2024/06/01 11:35:02
 permalink: /article/mtws5o6g/
