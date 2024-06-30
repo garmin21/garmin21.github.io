@@ -228,13 +228,11 @@ Object.defineProperty(); // 定义/修改对象的属性，并返回此对象,�
 Object.getOwnPropertyName(); // 返回一个由指定对象的所有自身属性的属性名,(不含Symbol值的属性名)
 Object.create(); // 创建一个新对象，可以指定其原型，传递null则会创建一个空白的对象
 Object.freeze(); // 冻结一个对象，使得这个对象不能被修改了，可以用来提升性能
-Object.fromEntries(); // 将一个二维由的数组，转成对象的键值对
 Object.getOwnPropertyDescriptor(); // 获取对象的属性,返回这个属性描述符对象，如果第一个参数不是对象，会报错，会被强制转为对象
 Object.getOwnPropertyDescriptors(); // 方法用来获取一个对象的所有自身属性的描述符。
 Object.getOwnPropertyNames(); // 返回一个包含指定对象的所有非继承属性名的数组,包括不可枚举属性
 Object.getOwnPropertySymbols(); // 方法返回一个给定对象自身的所有 Symbol 属性的数组。
 Object.getPrototypeOf(); // 获取对象的原型
-Object.is(); // 方法判断两个值是否为同一个值。
 Object.isFreeze(); // 检查当前对象是否已经冻结
 Object.isExtensible(); // 方法判断一个对象是否是可扩展的(是否可以添加新的属性)
 Object.isFrozen(); // 方法判断一个对象是否被冻结。
@@ -243,6 +241,12 @@ Object.isSealed(); // 方法判断一个对象是否被密封。
 Object.setPrototypeOf(); // 方法设置一个指定的对象的原型
 Object.values(); // 方法返回一个给定对象自身的所有可枚举value的数组
 Object.seal(); // 阻止向指定的对象添加新属性或删除现有属性
+Object.is()  // 用于比较两个数据是否相等，返回布尔值； 类似于全等，不同点NaN和Nan相等、+0和-0不相等
+Object.getOwnProppertyDescriptors()  // 获取对象所有自身属性的描述信息  ES8新增
+// 
+Object.entries()  // 返回二维数组，由属性名和属性值 组成  ES8新增
+// 把一个二维的数组，转为由属性名和属性值组成的对象, ES8新增  其实就是 Object.entries 的逆运算 
+Object.fromEntries();
 ```
 
 ```js

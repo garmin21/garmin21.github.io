@@ -7,10 +7,6 @@ tags:
   - element-ui
 ---
 
-:::tip
-本次示例中使用 的是 `element-ui@2.15.14`
-:::
-
 ## el-select
 
 其原理，就是借用 `vue-popper.js` 的 mixin 文件，控制其定位的位置。底层使用还是 `popper.js`。
@@ -84,14 +80,9 @@ export default {
   },
 };
 ```
-
-@tab vue-popper.js
-
-```js
-// 查看 弹出框 el-popper 这篇文章，这里有
-```
-
 :::
+
+[vue-popper.js](/article/w82r5ewm/)
 
 ## 分析总结
 
@@ -99,3 +90,7 @@ export default {
 2. `setSelected` 方法用于设置选项数据. 很重要的一个方法。
 
 
+
+:::tip
+本次示例中使用 的是 `element-ui@2.15.14`
+:::

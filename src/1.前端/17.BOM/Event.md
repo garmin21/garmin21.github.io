@@ -286,7 +286,7 @@ event.key; // 键盘按键的值 （返回是字符串）
 
 ```js
 event.type; // 返回事件类型（事件名）
-event.timestamp; // 触发事件时的时间戳（从页面打开的那一刻开始计算）
+event.timeStamp; // 触发事件时的时间戳（从页面打开的那一刻开始计算）
 event.target; // 获取目标元素 （事件委派）
 event.stopPropagation(); // 阻止冒泡
 event.preventDefault(); // 阻止默认行为（一些元素发生某些事件之后又默认行为）

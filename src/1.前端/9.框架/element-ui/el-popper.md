@@ -7,10 +7,6 @@ tags:
   - element-ui
 ---
 
-:::tip
-本次示例中使用 的是 `element-ui@2.15.14`
-:::
-
 ## el-popper
 
 在 element-ui 中其核心 是 使用 popper.js 提供强大定位功能使其可以让元素任意的定位到某一个元素
@@ -376,3 +372,9 @@ export default {
   - 1. 改变其内置属性 `showPopper` 的值。 showPopper 控制着元素的显示
   - 2. 在`vue-popper.js` 的mixin 文件中监听其 值的改变，触发 `updatePopper` or `destroyPopper`
   - 3. 在`updatePopper` 中如果已存在 popperJS 实例，进行实例更新，并且重新设置 z-index 属性，如果不存在则创建一个 popperJS 实例，此时元素已然显示在页面中
+
+
+
+:::tip
+本次示例中使用 的是 `element-ui@2.15.14`
+:::
