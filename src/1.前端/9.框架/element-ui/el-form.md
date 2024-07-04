@@ -1,5 +1,5 @@
 ---
-title: 表单 el-form
+title: 表单组件 el-form
 author: 李嘉明
 createTime: 2024/06/30 17:15:47
 permalink: /article/9bvwr95d/

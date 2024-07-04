@@ -1,5 +1,5 @@
 ---
-title: 选择器 el-select
+title: 选择组件 el-select
 author: 李嘉明
 createTime: 2024/06/10 12:07:05
 permalink: /article/nx2fj9pc/

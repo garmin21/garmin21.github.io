@@ -1,5 +1,5 @@
 ---
-title: 表格 el-table
+title: 表格组件 el-table
 author: 李嘉明
 createTime: 2024/06/22 11:30:26
 permalink: /article/9m4byfow/

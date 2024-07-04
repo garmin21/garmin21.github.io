@@ -1,5 +1,5 @@
 ---
-title: 弹出框 el-dialog
+title: 对话组件 el-dialog
 author: 李嘉明
 createTime: 2024/06/17 15:41:07
 permalink: /article/la5ixlqj/

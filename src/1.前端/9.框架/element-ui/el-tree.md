@@ -1,5 +1,5 @@
 ---
-title: 树形控件 el-tree
+title: 树形组件 el-tree
 author: 李嘉明
 tags:
   - element-ui
