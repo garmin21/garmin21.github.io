@@ -7,9 +7,8 @@ createTime: 2024/04/21 18:33:04
 permalink: /article/w45r5ews/
 ---
 
-:::tip
-本次示例中使用 的是 `element-ui@2.15.14`
-:::
+
+## el-tree
 
 首先，在 vue 中，我们可以理解为，组件就是一个具有自己方法和属性的 js 对象。想象一棵 `tree 树结构`，它具有 `id` `name` `children` 属性，children 包含中所有的 子 对象，层层包含着，所以 需要生成类似这样的组件，据必须重复重复的调用自己。
 
@@ -183,3 +182,8 @@ this.$nextTick(() => {
 }
 
 ```
+
+
+:::tip
+本次示例中使用 的是 `element-ui@2.15.14`
+:::

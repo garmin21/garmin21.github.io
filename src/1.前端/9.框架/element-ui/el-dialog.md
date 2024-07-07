@@ -7,9 +7,6 @@ tags:
   - element-ui
 ---
 
-:::tip
-本次示例中使用 的是 `element-ui@2.15.14`
-:::
 
 ## el-dialog
 
@@ -355,3 +352,6 @@ export {
 
 1. dialog 的 效果实现，是通过 `PopupManager` 来进行控制的，`PopupManager.openModal()` 打开弹框 `PopupManager.closeModal` 关闭弹框
 
+:::tip
+本次示例中使用 的是 `element-ui@2.15.14`
+:::

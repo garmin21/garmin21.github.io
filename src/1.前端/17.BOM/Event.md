@@ -127,7 +127,30 @@ beforeunload; // 文档关闭之前
 
 // 有兼容性
 DOMContentLoaded; // 文档DOM元素加载完触发事件
+
+visibilitychange; // 用于检测整个文档的可见性状态变化的事件
 ```
+
+**visibilitychange**
+:::normal-demo
+
+```html
+<p>监听文档是否可见，需要复制出去运行，效果：当你切换页面的时候，会改变tab 标题</p>
+```
+
+```js
+document.addEventListener('visibilitychange', function () {
+  if (document.visibilityState === 'visible') {
+    document.title = '页面可见';
+  } else {
+    document.title = '页面不可见';
+  }
+});
+```
+
+:::
+
+**beforeunload**
 
 :::tip
 需要注意的一件事是当页面去加载图片【外部文件】的时候，浏览器是不会等待图片下载完才去渲染页面，而是异步的去渲染页面，图片相当于是引入了一个外部文件，只是占着一个位置，你这个时候去获取图片的宽度和高度，是获取不到的,而是需要等待页面全部加载完成才能获取
@@ -150,6 +173,7 @@ window.addEventListener('beforeunload', function (e) {
   }
 });
 ```
+
 :::
 
 ### 表单事件
