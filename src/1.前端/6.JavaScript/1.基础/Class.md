@@ -7,6 +7,8 @@ tags:
   - javascript
 ---
 
+[阮一峰ES6文档](https://es6.ruanyifeng.com/#docs/class)
+
 ## Class 语法
 
 ### 定义类(构造函数)

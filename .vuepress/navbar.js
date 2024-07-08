@@ -23,42 +23,18 @@ export default defineNavbarConfig([
             link: 'https://vite-plugin-mock-dev-server.netlify.app/',
             icon: 'carbon:server-proxy',
           },
-          {
-            text: 'vuepress-theme-plume',
-            link: 'https://plume.pengzhanbo.cn/guide/intro/',
-            icon: 'bi:image-fill',
-          },
+          
         ],
       },
       {
         text: 'Vuepress',
         icon: 'vscode-icons:file-type-vue',
         items: [
-          // {
-          //   text: 'vuepress-theme-plume',
-          //   link: 'https://plume.jm-garming',
-          //   icon: 'mdi:paper-airplane',
-          // },
-          // {
-          //   text: 'plugin-caniuse',
-          //   link: 'https://plume.jm-garming/plugins/plugin-caniuse/',
-          //   icon: 'pajamas:feature-flag',
-          // },
-          // {
-          //   text: 'plugin-shikiji',
-          //   link: 'https://plume.jm-garming/plugins/plugin-shikiji/',
-          //   icon: 'material-symbols-light:code-blocks-outline-rounded',
-          // },
-          // {
-          //   text: 'plugin-iconify',
-          //   link: 'https://plume.jm-garming/plugins/plugin-iconify/',
-          //   icon: 'line-md:iconify1',
-          // },
-          // {
-          //   text: 'plugin-netlify-functions',
-          //   link: 'https://plume.jm-garming/plugins/plugin-netlify-functions/',
-          //   icon: 'teenyicons:netlify-solid',
-          // },
+          {
+            text: 'vuepress-theme-plume',
+            link: 'https://plume.pengzhanbo.cn/guide/intro/',
+            icon: 'mdi:paper-airplane',
+          }
         ],
       },
     ],
@@ -68,10 +44,52 @@ export default defineNavbarConfig([
     icon: 'icon-park-solid:bookshelf',
     items: [
       {
-        text: 'CSS学习简记',
-        link: '/defensive-css/',
-        activeMatch: '^/note/defensive-css/',
-        icon: 'streamline:css-three',
+        text: '网页三剑客',
+        icon: 'game-icons:spider-web',
+        items: [
+          {
+            text: 'CSS学习简记',
+            link: '/defensive-css/',
+            activeMatch: '^/note/defensive-css/',
+            icon: 'streamline:css-three',
+          },
+          {
+            text: 'JAVASCRIPT学习简记',
+            link: '/defensive-javascript/',
+            activeMatch: '^/note/defensive-javascript/',
+            icon: 'skill-icons:javascript',
+          },
+        ],
+      },
+      {
+        text: '前端框架',
+        icon: 'emojione-v1:frame-with-tiles',
+        items: [
+          {
+            text: 'vue2学习简记',
+            link: '/learn-vue/',
+            activeMatch: '^/note/learn-vue/',
+            icon: 'logos:vue',
+          },
+          {
+            text: 'react学习简记',
+            link: '/learn-react/',
+            activeMatch: '^/note/learn-react/',
+            icon: 'skill-icons:react-dark',
+          },
+        ],
+      },
+      {
+        text: '工程化',
+        icon: 'flat-color-icons:engineering',
+        items: [
+          {
+            text: '构建工具',
+            link: '/learn-build/',
+            activeMatch: '^/note/learn-build/',
+            icon: 'noto-v1:building-construction',
+          }
+        ],
       },
       {
         text: '前端面试题',
@@ -91,24 +109,6 @@ export default defineNavbarConfig([
         activeMatch: '^/note/learn-rust/',
         icon: 'mdi:language-rust',
       },
-      {
-        text: 'vue2学习简记',
-        link: '/learn-vue/',
-        activeMatch: '^/note/learn-vue/',
-        icon: 'logos:vue',
-      },
-      {
-        text: 'react学习简记',
-        link: '/learn-react/',
-        activeMatch: '^/note/learn-react/',
-        icon: 'skill-icons:react-dark',
-      },
-      {
-        text: '构建工具',
-        link: '/learn-build/',
-        activeMatch: '^/note/learn-build/',
-        icon: 'noto-v1:building-construction',
-      }, //skill-icons:gulp
     ],
   },
   {
