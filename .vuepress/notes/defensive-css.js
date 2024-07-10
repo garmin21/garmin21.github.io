@@ -26,6 +26,7 @@ export default definePlumeNotesItemConfig({
       dir: '技巧篇',
       collapsed: true,
       items: [
+        'scroll-behavior',
         '扩大点击区域',
         'element-fil-container',
         'flex-box-wrapping',
