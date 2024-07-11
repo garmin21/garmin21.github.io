@@ -4,12 +4,13 @@ export default definePlumeNotesItemConfig({
   link: '/learn-py/',
   dir: 'Python学习简记',
   sidebar: [
+    '',
     {
       dir: '基础入门',
       collapsed: false,
       items: [
         '基础语法和变量',
-        // '类型推导',
+        '表达式和运算符',
         // '基本类型',
         // '数字类型',
         // '字符,布尔,单元类型',
