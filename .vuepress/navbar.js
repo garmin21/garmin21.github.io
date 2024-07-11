@@ -80,6 +80,12 @@ export default defineNavbarConfig([
         ],
       },
       {
+        text: 'Python学习简记',
+        link: '/learn-py/',
+        activeMatch: '^/note/learn-py/',
+        icon: 'bxl:python',
+      },
+      {
         text: '工程化',
         icon: 'flat-color-icons:engineering',
         items: [
