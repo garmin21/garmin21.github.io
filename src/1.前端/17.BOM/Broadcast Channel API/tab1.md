@@ -1,5 +1,5 @@
 ---
-title: 浏览上下文通信 BroadcastChannel
+title: BroadcastChannel 浏览上下文通信 
 author: 李嘉明
 createTime: 2024/07/11 17:49:20
 permalink: /article/fugnpm9p/
