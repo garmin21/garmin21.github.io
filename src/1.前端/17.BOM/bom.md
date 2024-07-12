@@ -81,7 +81,11 @@ btoa(); // 编码
 
 // 该方法会在浏览器重绘之前来调用指定的回调函数, 返回一个 ID，唯一标识，用于取消回调函数
 requestAnimationFrame(callBack);
-cancelAnimationFrame(ID); // 用于取消 回调函数
+cancelAnimationFrame(id); // 用于取消 回调函数
+
+// requestIdleCallback() 主要用来在浏览器空闲时运行高耗时、低优先级的任务
+requestIdleCallback(callback, options)
+cancelIdleCallback(id)
 ```
 
 **requestAnimationFrame**
