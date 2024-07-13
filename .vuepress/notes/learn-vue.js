@@ -18,7 +18,8 @@ export default definePlumeNotesItemConfig({
         'vue核心概念',
         '路由',
         'render函数',
-        '插槽'
+        '插槽',
+        '辅助函数'
       ],
     },
     {
