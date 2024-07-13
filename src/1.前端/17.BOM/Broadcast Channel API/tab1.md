@@ -1,11 +1,10 @@
 ---
-title: BroadcastChannel 浏览上下文通信 
+title: BroadcastChannel 浏览上下文通信
 author: 李嘉明
 createTime: 2024/07/11 17:49:20
 permalink: /article/fugnpm9p/
 tags:
   - BOM
-# banner: https://developer.mozilla.org/zh-CN/docs/Web/API/Broadcast_Channel_API/broadcastchannel.png
 ---
 
 ![浏览上下文通信](https://developer.mozilla.org/zh-CN/docs/Web/API/Broadcast_Channel_API/broadcastchannel.png)
