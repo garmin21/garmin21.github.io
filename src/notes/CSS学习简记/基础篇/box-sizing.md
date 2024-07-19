@@ -1,5 +1,5 @@
 ---
-title: 盒模型
+title: 盒子模型
 author: 李嘉明
 createTime: 2024/04/13 14:53:55
 permalink: /defensive-css/Box-model/

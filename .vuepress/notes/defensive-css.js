@@ -9,17 +9,18 @@ export default definePlumeNotesItemConfig({
       dir: '基础篇',
       collapsed: true,
       items: [
-        'CSS选择器',
+        'selector',
         'line-height',
         'vertical-align',
-        '背景',
-        '盒模型',
+        'background',
+        'box-sizing',
         'margin',
         'float',
-        '定位',
+        'position',
         'min-max',
-        '伪元素',
-        'css函数'
+        'after',
+        'calc',
+        '@container'
       ],
     },
     {

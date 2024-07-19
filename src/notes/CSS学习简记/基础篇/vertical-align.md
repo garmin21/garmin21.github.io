@@ -1,5 +1,5 @@
 ---
-title: vertical-align
+title: 行框垂直对齐方式
 author: 李嘉明
 createTime: 2024/04/13 14:06:08
 permalink: /defensive-css/vertical-align/
