@@ -1,7 +1,7 @@
 import { plumeTheme } from 'vuepress-theme-plume'
 import notes from './notes/index.js'
 import navbar from './navbar.js'
-import encrypt from './encrypt.js'
+// import encrypt from './encrypt.js'
 
 export default plumeTheme({
   hostname: 'http://garmin21.github.io/',
@@ -28,5 +28,5 @@ export default plumeTheme({
     shiki: { twoslash: true },
     markdownEnhance: { demo: true },
   },
-  encrypt
+  // encrypt
 })

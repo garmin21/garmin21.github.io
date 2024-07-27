@@ -2,9 +2,7 @@
 title: promise
 createTime: 2022/04/17 05:53:48
 author: 李嘉明
-tags:
-  - javascript
-permalink: /article/a895fu8f/
+permalink: /defensive-javascript/a895fu8f/
 ---
 
 ::: tip 提问

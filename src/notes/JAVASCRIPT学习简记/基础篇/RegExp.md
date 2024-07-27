@@ -2,9 +2,7 @@
 title: RegExp 正则
 author: 李嘉明
 createTime: 2024/05/26 21:13:46
-permalink: /article/64dyxuj5/
-tags:
-  - javascript
+permalink: /defensive-javascript/64dyxuj5/
 ---
 
 ### 属性

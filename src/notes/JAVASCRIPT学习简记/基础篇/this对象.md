@@ -2,9 +2,7 @@
 title: this对象
 createTime: 2022/04/15 04:11:13
 author: 李嘉明
-tags:
-  - javascript
-permalink: /article/wdcjym47/
+permalink: /defensive-javascript/wdcjym47/
 ---
 
 ::: tip 提问

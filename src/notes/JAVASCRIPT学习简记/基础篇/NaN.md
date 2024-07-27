@@ -2,9 +2,7 @@
 title: NaN
 createTime: 2022/04/15 03:35:01
 author: 李嘉明
-tags:
-  - javascript
-permalink: /article/jilzuxpt/
+permalink: /defensive-javascript/jilzuxpt/
 ---
 
 ::: tip 提问
