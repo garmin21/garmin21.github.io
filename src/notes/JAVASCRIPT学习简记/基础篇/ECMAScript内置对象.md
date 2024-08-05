@@ -245,6 +245,10 @@ Object.getOwnProppertyDescriptors()  // 获取对象所有自身属性的描述�
 Object.entries()  // 返回二维数组，由属性名和属性值 组成  ES8新增
 // 把一个二维的数组，转为由属性名和属性值组成的对象, ES8新增  其实就是 Object.entries 的逆运算 
 Object.fromEntries();
+
+// 2024 对一个数组，按照某个字段的值，进行分组.
+// 参数一 array , 参数是二 是一个回调函数，接收两个参数 element, index， 返回值 确定以那个字段进行分组
+Object.groupBy()
 ```
 
 ```js

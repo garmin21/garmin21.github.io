@@ -7,6 +7,8 @@ tags:
   - element-ui
 ---
 
+[基础版select实现](https://gitee.com/hhhh-ddd/jm-framework/blob/master/JM-G6/src/pages/select-example.vue)
+
 ## el-select
 
 其原理，就是借用 `vue-popper.js` 的 mixin 文件，控制其定位的位置。底层使用还是 `popper.js`。
