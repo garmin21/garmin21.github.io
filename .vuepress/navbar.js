@@ -77,6 +77,12 @@ export default defineNavbarConfig([
             activeMatch: '^/note/learn-react/',
             icon: 'skill-icons:react-dark',
           },
+          {
+            text: 'vue3学习简记',
+            link: '/learn-vue3/',
+            activeMatch: '^/note/learn-vue3/',
+            icon: 'logos:vue',
+          },
         ],
       },
       {

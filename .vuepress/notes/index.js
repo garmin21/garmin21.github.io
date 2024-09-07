@@ -8,6 +8,7 @@ import defensiveCss from './defensive-css.js'
 import defensiveJavascript from './defensive-javascript.js'
 import learnReact from './learn-react.js'
 import learnVue from './learn-vue.js'
+import learnVue3 from './learn-vue3.js'
 import learnBuild from './learn-build.js'
 import learnPy from './learn-py.js'
 
@@ -25,6 +26,7 @@ export default definePlumeNotesConfig({
     learnReact,
     learnVue,
     learnBuild,
-    learnPy
+    learnPy,
+    learnVue3
   ],
 })
