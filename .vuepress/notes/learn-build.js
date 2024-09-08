@@ -15,7 +15,13 @@ export default definePlumeNotesItemConfig({
       dir: 'Webpack',
       collapsed: false,
       items: [
+        'webpack原理',
         'webpack快速入门教程',
+        'require',
+        'umd模块',
+        'webpack-hmr',
+        'webpack性能优化',
+        'webpack优化'
       ],
     },
     {

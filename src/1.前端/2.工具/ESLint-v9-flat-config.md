@@ -3,6 +3,8 @@ title: ESLint v9版本 扁平模式(Flat Config)
 author: 李嘉明
 createTime: 2024/09/08 14:46:11
 permalink: /article/0u8rbcrv/
+tags:
+  - 工具
 ---
 
 ## 前言

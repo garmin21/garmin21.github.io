@@ -3,6 +3,8 @@ title: Sortable.js排序工具
 author: 李嘉明
 createTime: 2024/04/27 23:54:37
 permalink: /article/lm4lecta/
+tags:
+  - 工具
 ---
 
 :::tip

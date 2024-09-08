@@ -2,9 +2,7 @@
 title: 前端模块
 author: 李嘉明
 createTime: 2024/05/27 22:26:24
-permalink: /article/rfzue1fu/
-tags:
-  - node
+permalink: /learn-build/umd/
 ---
 
 :::tip

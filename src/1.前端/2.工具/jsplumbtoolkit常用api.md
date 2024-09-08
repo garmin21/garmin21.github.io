@@ -3,6 +3,8 @@ title: jsplumbtoolkit常用api
 author: 李嘉明
 createTime: 2024/04/18 21:52:42
 permalink: /article/dn66xp9s/
+tags:
+  - 工具
 ---
 
 ## jsplumbtoolkit 常用 api

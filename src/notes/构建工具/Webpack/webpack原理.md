@@ -2,10 +2,7 @@
 title: webpack原理的简单入门
 createTime: 2021/03/21 06:13:07
 author: 李嘉明
-tags:
-  - node
-  - webpack
-permalink: /article/gq88mn6a/
+permalink: /learn-build/webpack/
 ---
 
 ::: center

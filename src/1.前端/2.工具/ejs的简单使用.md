@@ -3,6 +3,8 @@ title: ejs的简单使用
 author: 李嘉明
 createTime: 2024/04/27 10:36:15
 permalink: /article/h3wxj0bc/
+tags:
+  - 工具
 ---
 
 ## 什么是 EJS?

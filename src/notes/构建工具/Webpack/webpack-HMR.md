@@ -2,10 +2,7 @@
 title: webpack模块热替换（HMR）
 createTime: 2021/03/24 05:14:18
 author: 李嘉明
-tags:
-  - node
-  - webpack
-permalink: /article/knagbtgd/
+permalink: /learn-build/hmr/
 ---
 
 **模块热替换（Hot Module Replacement）** 是 webpack 的一个 十分有用且强大的 特性。

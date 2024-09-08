@@ -2,10 +2,7 @@
 title: require API
 author: 李嘉明
 createTime: 2024/05/17 22:53:53
-permalink: /article/u0dgv67s/
-tags:
-  - node
-  - webpack
+permalink: /learn-build/require/
 ---
 
 

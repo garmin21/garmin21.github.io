@@ -3,6 +3,8 @@ title: jsplumbtoolkit绘图工具使用记录
 author: 李嘉明
 createTime: 2024/04/18 20:59:46
 permalink: /article/j7cb45vd/
+tags:
+  - 工具
 ---
 
 ::: tip
