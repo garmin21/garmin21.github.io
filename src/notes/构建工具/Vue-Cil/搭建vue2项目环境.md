@@ -5,7 +5,11 @@ createTime: 2024/09/08 01:13:24
 permalink: /learn-build/1fg5w4pc/
 ---
 
-记录使用 vue-cli5 搭建 vue2 开发环境。
+记录使用 vue-cli5 搭建 vue2 开发环境。记住可以通过 终端的，**输出** 检查当前的扩展是否 在使用中
+
+![终端](/eslint/1.png)
+
+搭建 vue3 也是大差不差，可以参考这个然后再做出修改即可
 
 ## 创建 vue2 项目
 
@@ -45,6 +49,10 @@ npm i prettier
 到现在已经安装了所需要的插件，开始配置文件
 
 由于我们使用的是 vue-cli 创建的项目，`package.json` 的 type 是没有的，其默认 `commonjs` 规范
+
+:::tip
+**注意，** 这是旧的 eslint 配置文件，如果你的 eslint 版本，高于 `8.57.0`, 建议使用新的配置
+:::
 
 1. 创建 `.eslintrc.js`
 
@@ -115,6 +123,8 @@ module.exports = {
   },
 };
 ```
+
+![eslint-plugin-vue](/eslint/eslint-plugin-vue.png)
 
 创建 `.eslintignore` 忽略 eslint 的检查范围
 
@@ -442,13 +452,32 @@ registry=https://registry.npmmirror.com
 
 5. 安装 `@babel/plugin-proposal-optional-chaining`
 
-安装 `@babel/plugin-proposal-optional-chaining` 用于支持 可选链，配置 babel
+`@babel/plugin-proposal-optional-chaining` 用于支持 可选链，配置 `babel.config.js`
 
 ```js
 module.exports = {
   presets: ['@vue/cli-plugin-babel/preset'],
   plugins: ['@babel/plugin-proposal-optional-chaining'],
 };
+```
+
+6. 配置 `jsconfig.json`
+
+jsconfig.json 是用于配置 JavaScript 项目的文件，通常用于告诉编辑器（如 Visual Studio Code）关于项目的一些细节，以提供更好的开发体验
+
+```json
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "baseUrl": "./",
+    "moduleResolution": "node",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+  }
+}
 ```
 
 ## vue.config.js 配置 开发与生产环境配置
@@ -464,11 +493,17 @@ const productionGzipExtensions = ['js', 'css'];
 
 module.exports = defineConfig({
   transpileDependencies: true,
+  // 部署生产环境和开发环境下的URL。表示服务启动后，会在这个路径下启动项目。
   publicPath: isProduction ? '/name/' : '/',
+  // 是否开启eslint保存检测，有效值：ture | false | 'error'
   lintOnSave: true,
+  // 输出文件夹
   outputDir: '../dist',
+  // 用于放置生成的静态资源 (js、css、img、fonts) 的；（项目打包之后，静态资源会放在这个文件夹下）
   assetsDir: 'static',
+  // 是否开启 vue 运行时的编译
   runtimeCompiler: true,
+  // 操作 webpack 的 一些配置
   chainWebpack: (config) => {
     config.plugins.delete('preload');
     config.plugins.delete('prefetch');
@@ -516,6 +551,7 @@ module.exports = defineConfig({
       config.optimization.runtimeChunk('single');
     });
   },
+  // webpack 的一些配置内容
   configureWebpack: {
     name: '常规vue2模板',
     performance: {
@@ -550,6 +586,7 @@ module.exports = defineConfig({
       chunkFilename: '[name].[hash].js',
     },
   },
+  // 服务器配置
   devServer: {
     headers: {
       'Access-Control-Allow-Origin': '*',
@@ -575,10 +612,11 @@ module.exports = defineConfig({
     },
     allowedHosts: 'all',
   },
+  // 样式配置
   css: {
     loaderOptions: {
       sass: {
-				// sass 引入全局公用 mixin 变量等
+        // sass 引入全局公用 mixin 变量等
         additionalData(content, loaderContext) {
           const { resourcePath, rootContext } = loaderContext;
           const relativePath = path.relative(rootContext, resourcePath);
@@ -593,4 +631,75 @@ module.exports = defineConfig({
     },
   },
 });
+```
+
+## package.json
+
+至此，我们的一个，具有 代码校验，style 校验 代码美化，打包优化等 的一个基础项目结构就已经配置完毕，最后附上 `package.json`
+
+```json
+{
+  "name": "vue-test-dome",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint:js": "vue-cli-service lint",
+    "lint:style": "stylelint src/**/*.{css,scss,vue} --cache --fix"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "core-js": "^3.8.3",
+    "element-ui": "^2.15.14",
+    "js-cookie": "^3.0.5",
+    "lodash": "^4.17.21",
+    "normalize.css": "^8.0.1",
+    "nprogress": "^0.2.0",
+    "qs": "^6.13.0",
+    "vue": "^2.6.14",
+    "vue-router": "^3.6.5",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@babel/plugin-proposal-optional-chaining": "^7.21.0",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "autoprefixer": "^10.4.20",
+    // element-ui 按需移入组件
+    "babel-plugin-component": "^1.1.1",
+    // 压缩
+    "compression-webpack-plugin": "^11.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "postcss": "^8.4.45",
+    "postcss-html": "^1.7.0",
+    "prettier": "^2.4.1",
+    "sass": "^1.77.8",
+    "sass-loader": "^16.0.1",
+    "stylelint": "14.16.1",
+    "stylelint-config-html": "1.1.0",
+    "stylelint-config-prettier": "9.0.5",
+    "stylelint-config-recess-order": "3.1.0",
+    "stylelint-config-recommended-scss": "8.0.0",
+    "stylelint-config-recommended-vue": "^1.5.0",
+    "stylelint-config-standard": "28.0.0",
+    "stylelint-config-standard-scss": "6.1.0",
+    // svg 引入 工具
+    "svg-sprite-loader": "^4.1.3",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "browserslist": ["> 1%", "last 2 versions", "not dead"],
+  // 配置node 大于 18.16
+  // npm 大于 8.5.5
+  "engines": {
+    "node": ">=18.16.0",
+    "npm": ">= 8.5.5"
+  }
+}
 ```

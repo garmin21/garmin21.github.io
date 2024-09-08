@@ -22,15 +22,14 @@ export default definePlumeNotesItemConfig({
       dir: 'Vue-Cil',
       collapsed: false,
       items: [
-        '搭建vue2项目环境',
-        // '搭建vue3项目环境',
+        '搭建vue2项目环境'
       ],
     },
     {
       dir: 'Vite',
       collapsed: false,
       items: [
-        // '搭建vue3项目环境'
+        '搭建vue3项目环境'
       ],
     },
   ],
