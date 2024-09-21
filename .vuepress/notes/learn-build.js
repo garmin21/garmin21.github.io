@@ -35,7 +35,8 @@ export default definePlumeNotesItemConfig({
       dir: 'Vite',
       collapsed: false,
       items: [
-        '搭建vue3项目环境'
+        '搭建vue3项目环境',
+        'import.meta.glob'
       ],
     },
   ],
