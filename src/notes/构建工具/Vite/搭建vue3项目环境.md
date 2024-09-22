@@ -12,7 +12,8 @@ permalink: /learn-build/c0uo7m7w/
 ## ESlint
 
 **项目自动安装 eslint**
-官网规则：<https://zh-hans.eslint.org/docs/latest/rules/>
+
+> 官网规则：<https://zh-hans.eslint.org/docs/latest/rules/>
 
 通过手脚架生成的，会带有 `.eslintrc.cjs` 的文件，默认配置以及我自己的配置内容如下：
 
@@ -134,6 +135,9 @@ module.exports = {
 
 **项目自动安装 prettier**
 
+> prettier 官网规则： <https://www.prettier.cn/docs/options.html>
+
+
 创建 `.prettierrc.cjs`配置文件，配置如下
 
 ```js
@@ -183,6 +187,8 @@ module.exports = {
 ## stylelint
 
 配置 stylelint 的时候，我们需要手动安装一些配置。
+
+> 官网规则：<https://www.stylelint.cn/user-guide/rules>
 
 **经过验证，这一套配置，正常通用，版本需要需要固定安装，有些插件已经很久没有维护了**
 
