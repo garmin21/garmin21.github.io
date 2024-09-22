@@ -25,7 +25,7 @@ export default definePlumeNotesItemConfig({
       ],
     },
     {
-      dir: 'Vue-Cil',
+      dir: 'VueCil',
       collapsed: false,
       items: [
         '搭建vue2项目环境'
