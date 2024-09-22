@@ -52,7 +52,8 @@ const modules = import.meta.glob('./dir/*.js', {
   // 1. default 默认导入
   // 2. setup 具名导入： 如果 你只想要导入模块中的部分内容，那么就可以使用具名导入
   import: 'setup',
-  // query 参数表示 将资源作为 什么方式导入，具体可以查看文档的描述 https://cn.vitejs.dev/guide/features#custom-queries
+  // query 参数表示 将资源作为 什么方式导入，
+  // 具体可以查看文档的描述 https://cn.vitejs.dev/guide/features#custom-queries
   query: '?raw',
 });
 ```

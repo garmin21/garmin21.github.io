@@ -1,5 +1,5 @@
 ---
-title: 搭建vue2项目环境
+title: vue2
 author: 李嘉明
 createTime: 2024/09/08 01:13:24
 permalink: /learn-build/1fg5w4pc/
