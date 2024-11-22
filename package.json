@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vuepress dev src --config ./config.js",
+    "dev": "jm-node-switch && vuepress dev src --config ./config.js",
     "build": "vuepress build src --config ./config.js",
     "deploy": "bash deploy.sh",
     "push": "bash push.sh"
